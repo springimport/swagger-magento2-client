@@ -66,7 +66,7 @@ class CheckoutGuestTotalsInformationManagementVApi
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
-            $apiClient->getConfig()->setHost('http://springimport.net/rest/default');
+            $apiClient->getConfig()->setHost('http://example.com/rest/default');
         }
 
         $this->apiClient = $apiClient;

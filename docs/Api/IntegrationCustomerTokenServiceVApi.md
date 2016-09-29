@@ -1,6 +1,6 @@
 # Swagger\Client\IntegrationCustomerTokenServiceVApi
 
-All URIs are relative to *http://springimport.net/rest/default*
+All URIs are relative to *http://example.com/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

@@ -72,7 +72,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://springimport.net/rest/default*
+All URIs are relative to *http://example.com/rest/default*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

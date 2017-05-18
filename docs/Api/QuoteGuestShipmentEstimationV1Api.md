@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\QuoteGuestShipmentEstimationV1Api
+# SpringImport\Swagger\Magento2\Client\QuoteGuestShipmentEstimationV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **quoteGuestShipmentEstimationV1EstimateByExtendedAddressPost**
-> \SpringImport\Magento2SwaggerApi\Model\QuoteDataShippingMethodInterface[] quoteGuestShipmentEstimationV1EstimateByExtendedAddressPost($cartId, $body)
+> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataShippingMethodInterface[] quoteGuestShipmentEstimationV1EstimateByExtendedAddressPost($cartId, $body)
 
 
 
@@ -19,9 +19,9 @@ Estimate shipping by address and return list of available shipping methods
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestShipmentEstimationV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestShipmentEstimationV1Api();
 $cartId = "cartId_example"; // string | 
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body4(); // \SpringImport\Magento2SwaggerApi\Model\Body4 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body56(); // \SpringImport\Swagger\Magento2\Client\Model\Body56 | 
 
 try {
     $result = $api_instance->quoteGuestShipmentEstimationV1EstimateByExtendedAddressPost($cartId, $body);
@@ -37,11 +37,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body4**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body4.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body56**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body56.md)|  | [optional]
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\QuoteDataShippingMethodInterface[]**](../Model/QuoteDataShippingMethodInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataShippingMethodInterface[]**](../Model/QuoteDataShippingMethodInterface.md)
 
 ### Authorization
 

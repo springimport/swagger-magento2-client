@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\QuoteGuestCartTotalRepositoryV1Api
+# SpringImport\Swagger\Magento2\Client\QuoteGuestCartTotalRepositoryV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **quoteGuestCartTotalRepositoryV1GetGet**
-> \SpringImport\Magento2SwaggerApi\Model\QuoteDataTotalsInterface quoteGuestCartTotalRepositoryV1GetGet($cartId)
+> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataTotalsInterface quoteGuestCartTotalRepositoryV1GetGet($cartId)
 
 
 
@@ -19,7 +19,7 @@ Return quote totals data for a specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestCartTotalRepositoryV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCartTotalRepositoryV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
 
 try {
@@ -39,7 +39,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\QuoteDataTotalsInterface**](../Model/QuoteDataTotalsInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataTotalsInterface**](../Model/QuoteDataTotalsInterface.md)
 
 ### Authorization
 

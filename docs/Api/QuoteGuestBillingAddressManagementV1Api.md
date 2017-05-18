@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\QuoteGuestBillingAddressManagementV1Api
+# SpringImport\Swagger\Magento2\Client\QuoteGuestBillingAddressManagementV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,9 +20,9 @@ Assign a specified billing address to a specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestBillingAddressManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestBillingAddressManagementV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body8(); // \SpringImport\Magento2SwaggerApi\Model\Body8 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body68(); // \SpringImport\Swagger\Magento2\Client\Model\Body68 | 
 
 try {
     $result = $api_instance->quoteGuestBillingAddressManagementV1AssignPost($cartId, $body);
@@ -38,7 +38,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**| The cart ID. |
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body8**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body8.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body68**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body68.md)|  | [optional]
 
 ### Return type
 
@@ -56,7 +56,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **quoteGuestBillingAddressManagementV1GetGet**
-> \SpringImport\Magento2SwaggerApi\Model\QuoteDataAddressInterface quoteGuestBillingAddressManagementV1GetGet($cartId)
+> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataAddressInterface quoteGuestBillingAddressManagementV1GetGet($cartId)
 
 
 
@@ -67,7 +67,7 @@ Return the billing address for a specified quote.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestBillingAddressManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestBillingAddressManagementV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
 
 try {
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\QuoteDataAddressInterface**](../Model/QuoteDataAddressInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataAddressInterface**](../Model/QuoteDataAddressInterface.md)
 
 ### Authorization
 

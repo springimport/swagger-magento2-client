@@ -3,7 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**addressInformation** | [**\SpringImport\Magento2SwaggerApi\Model\CheckoutDataShippingInformationInterface**](CheckoutDataShippingInformationInterface.md) |  | 
+**email** | **string** |  | 
+**template** | **string** |  | 
+**websiteId** | **int** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

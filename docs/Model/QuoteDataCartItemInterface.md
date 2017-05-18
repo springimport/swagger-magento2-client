@@ -10,8 +10,8 @@ Name | Type | Description | Notes
 **price** | **float** | Product price. Otherwise, null. | [optional] 
 **productType** | **string** | Product type. Otherwise, null. | [optional] 
 **quoteId** | **string** | Quote id. | 
-**productOption** | [**\SpringImport\Magento2SwaggerApi\Model\QuoteDataProductOptionInterface**](QuoteDataProductOptionInterface.md) |  | [optional] 
-**extensionAttributes** | [**\SpringImport\Magento2SwaggerApi\Model\QuoteDataCartItemExtensionInterface**](QuoteDataCartItemExtensionInterface.md) |  | [optional] 
+**productOption** | [**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataProductOptionInterface**](QuoteDataProductOptionInterface.md) |  | [optional] 
+**extensionAttributes** | [**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataCartItemExtensionInterface**](QuoteDataCartItemExtensionInterface.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

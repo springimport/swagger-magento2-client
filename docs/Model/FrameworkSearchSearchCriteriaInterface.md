@@ -4,8 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **requestName** | **string** |  | 
-**filterGroups** | [**\SpringImport\Magento2SwaggerApi\Model\FrameworkSearchFilterGroup[]**](FrameworkSearchFilterGroup.md) | A list of filter groups. | 
-**sortOrders** | [**\SpringImport\Magento2SwaggerApi\Model\FrameworkSortOrder[]**](FrameworkSortOrder.md) | Sort order. | [optional] 
+**filterGroups** | [**\SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchFilterGroup[]**](FrameworkSearchFilterGroup.md) | A list of filter groups. | 
+**sortOrders** | [**\SpringImport\Swagger\Magento2\Client\Model\FrameworkSortOrder[]**](FrameworkSortOrder.md) | Sort order. | [optional] 
 **pageSize** | **int** | Page size. | [optional] 
 **currentPage** | **int** | Current page. | [optional] 
 

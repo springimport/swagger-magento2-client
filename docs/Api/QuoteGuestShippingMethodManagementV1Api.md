@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\QuoteGuestShippingMethodManagementV1Api
+# SpringImport\Swagger\Magento2\Client\QuoteGuestShippingMethodManagementV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **quoteGuestShippingMethodManagementV1GetListGet**
-> \SpringImport\Magento2SwaggerApi\Model\QuoteDataShippingMethodInterface[] quoteGuestShippingMethodManagementV1GetListGet($cartId)
+> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataShippingMethodInterface[] quoteGuestShippingMethodManagementV1GetListGet($cartId)
 
 
 
@@ -19,7 +19,7 @@ List applicable shipping methods for a specified quote.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestShippingMethodManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestShippingMethodManagementV1Api();
 $cartId = "cartId_example"; // string | The shopping cart ID.
 
 try {
@@ -39,7 +39,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\QuoteDataShippingMethodInterface[]**](../Model/QuoteDataShippingMethodInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataShippingMethodInterface[]**](../Model/QuoteDataShippingMethodInterface.md)
 
 ### Authorization
 

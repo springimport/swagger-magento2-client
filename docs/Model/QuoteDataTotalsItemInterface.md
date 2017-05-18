@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 **options** | **string** | Item price in quote currency. | 
 **weeeTaxAppliedAmount** | **float** | Item weee tax applied amount in quote currency. | 
 **weeeTaxApplied** | **string** | Item weee tax applied in quote currency. | 
-**extensionAttributes** | [**\SpringImport\Magento2SwaggerApi\Model\QuoteDataTotalsItemExtensionInterface**](QuoteDataTotalsItemExtensionInterface.md) |  | [optional] 
+**extensionAttributes** | [**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataTotalsItemExtensionInterface**](QuoteDataTotalsItemExtensionInterface.md) |  | [optional] 
 **name** | **string** | Product name. Otherwise, null. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

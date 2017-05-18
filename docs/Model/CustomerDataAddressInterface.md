@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | ID | [optional] 
 **customerId** | **int** | Customer ID | [optional] 
-**region** | [**\SpringImport\Magento2SwaggerApi\Model\CustomerDataRegionInterface**](CustomerDataRegionInterface.md) |  | [optional] 
+**region** | [**\SpringImport\Swagger\Magento2\Client\Model\CustomerDataRegionInterface**](CustomerDataRegionInterface.md) |  | [optional] 
 **regionId** | **int** | Region ID | [optional] 
 **countryId** | **string** | Country code in ISO_3166-2 format | [optional] 
 **street** | **string[]** | Street | [optional] 
@@ -22,8 +22,8 @@ Name | Type | Description | Notes
 **vatId** | **string** | Vat id | [optional] 
 **defaultShipping** | **bool** | If this address is default shipping address. | [optional] 
 **defaultBilling** | **bool** | If this address is default billing address | [optional] 
-**extensionAttributes** | [**\SpringImport\Magento2SwaggerApi\Model\CustomerDataAddressExtensionInterface**](CustomerDataAddressExtensionInterface.md) |  | [optional] 
-**customAttributes** | [**\SpringImport\Magento2SwaggerApi\Model\FrameworkAttributeInterface[]**](FrameworkAttributeInterface.md) | Custom attributes values. | [optional] 
+**extensionAttributes** | [**\SpringImport\Swagger\Magento2\Client\Model\CustomerDataAddressExtensionInterface**](CustomerDataAddressExtensionInterface.md) |  | [optional] 
+**customAttributes** | [**\SpringImport\Swagger\Magento2\Client\Model\FrameworkAttributeInterface[]**](FrameworkAttributeInterface.md) | Custom attributes values. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

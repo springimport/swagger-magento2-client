@@ -1,12 +1,60 @@
-# SpringImport\Magento2SwaggerApi\QuoteGuestCartManagementV1Api
+# SpringImport\Swagger\Magento2\Client\QuoteGuestCartManagementV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**quoteGuestCartManagementV1AssignCustomerPut**](QuoteGuestCartManagementV1Api.md#quoteGuestCartManagementV1AssignCustomerPut) | **PUT** /V1/guest-carts/{cartId} | 
 [**quoteGuestCartManagementV1CreateEmptyCartPost**](QuoteGuestCartManagementV1Api.md#quoteGuestCartManagementV1CreateEmptyCartPost) | **POST** /V1/guest-carts | 
 [**quoteGuestCartManagementV1PlaceOrderPut**](QuoteGuestCartManagementV1Api.md#quoteGuestCartManagementV1PlaceOrderPut) | **PUT** /V1/guest-carts/{cartId}/order | 
 
+
+# **quoteGuestCartManagementV1AssignCustomerPut**
+> bool quoteGuestCartManagementV1AssignCustomerPut($cartId, $body)
+
+
+
+Assign a specified customer to a specified shopping cart.
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCartManagementV1Api();
+$cartId = "cartId_example"; // string | The cart ID.
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body50(); // \SpringImport\Swagger\Magento2\Client\Model\Body50 | 
+
+try {
+    $result = $api_instance->quoteGuestCartManagementV1AssignCustomerPut($cartId, $body);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling QuoteGuestCartManagementV1Api->quoteGuestCartManagementV1AssignCustomerPut: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **cartId** | **string**| The cart ID. |
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body50**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body50.md)|  | [optional]
+
+### Return type
+
+**bool**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **quoteGuestCartManagementV1CreateEmptyCartPost**
 > string quoteGuestCartManagementV1CreateEmptyCartPost()
@@ -20,7 +68,7 @@ Enable an customer or guest user to create an empty cart and quote for an anonym
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestCartManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCartManagementV1Api();
 
 try {
     $result = $api_instance->quoteGuestCartManagementV1CreateEmptyCartPost();
@@ -61,9 +109,9 @@ Place an order for a specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestCartManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCartManagementV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body3(); // \SpringImport\Magento2SwaggerApi\Model\Body3 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body51(); // \SpringImport\Swagger\Magento2\Client\Model\Body51 | 
 
 try {
     $result = $api_instance->quoteGuestCartManagementV1PlaceOrderPut($cartId, $body);
@@ -79,7 +127,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**| The cart ID. |
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body3**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body3.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body51**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body51.md)|  | [optional]
 
 ### Return type
 

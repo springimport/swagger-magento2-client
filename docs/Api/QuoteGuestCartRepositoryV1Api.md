@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\QuoteGuestCartRepositoryV1Api
+# SpringImport\Swagger\Magento2\Client\QuoteGuestCartRepositoryV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **quoteGuestCartRepositoryV1GetGet**
-> \SpringImport\Magento2SwaggerApi\Model\QuoteDataCartInterface quoteGuestCartRepositoryV1GetGet($cartId)
+> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataCartInterface quoteGuestCartRepositoryV1GetGet($cartId)
 
 
 
@@ -19,7 +19,7 @@ Enable a guest user to return information for a specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestCartRepositoryV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCartRepositoryV1Api();
 $cartId = "cartId_example"; // string | 
 
 try {
@@ -39,7 +39,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\QuoteDataCartInterface**](../Model/QuoteDataCartInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataCartInterface**](../Model/QuoteDataCartInterface.md)
 
 ### Authorization
 

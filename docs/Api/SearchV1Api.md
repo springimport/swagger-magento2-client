@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\SearchV1Api
+# SpringImport\Swagger\Magento2\Client\SearchV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **searchV1SearchGet**
-> \SpringImport\Magento2SwaggerApi\Model\FrameworkSearchSearchResultInterface searchV1SearchGet($searchCriteriaRequestName, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+> \SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchSearchResultInterface searchV1SearchGet($searchCriteriaRequestName, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
 
 
 
@@ -19,7 +19,7 @@ Make Full Text Search and return found Documents
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\SearchV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\SearchV1Api();
 $searchCriteriaRequestName = "searchCriteriaRequestName_example"; // string | 
 $searchCriteriaFilterGroupsFiltersField = "searchCriteriaFilterGroupsFiltersField_example"; // string | Field
 $searchCriteriaFilterGroupsFiltersValue = "searchCriteriaFilterGroupsFiltersValue_example"; // string | Value
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\FrameworkSearchSearchResultInterface**](../Model/FrameworkSearchSearchResultInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchSearchResultInterface**](../Model/FrameworkSearchSearchResultInterface.md)
 
 ### Authorization
 

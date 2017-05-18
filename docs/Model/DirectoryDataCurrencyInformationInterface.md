@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 **defaultDisplayCurrencyCode** | **string** | The default display currency code for the store. | 
 **defaultDisplayCurrencySymbol** | **string** | The currency symbol of the default display currency for the store. | 
 **availableCurrencyCodes** | **string[]** | The list of allowed currency codes for the store. | 
-**exchangeRates** | [**\SpringImport\Magento2SwaggerApi\Model\DirectoryDataExchangeRateInterface[]**](DirectoryDataExchangeRateInterface.md) | The list of exchange rate information for the store. | 
-**extensionAttributes** | [**\SpringImport\Magento2SwaggerApi\Model\DirectoryDataCurrencyInformationExtensionInterface**](DirectoryDataCurrencyInformationExtensionInterface.md) |  | [optional] 
+**exchangeRates** | [**\SpringImport\Swagger\Magento2\Client\Model\DirectoryDataExchangeRateInterface[]**](DirectoryDataExchangeRateInterface.md) | The list of exchange rate information for the store. | 
+**extensionAttributes** | [**\SpringImport\Swagger\Magento2\Client\Model\DirectoryDataCurrencyInformationExtensionInterface**](DirectoryDataCurrencyInformationExtensionInterface.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

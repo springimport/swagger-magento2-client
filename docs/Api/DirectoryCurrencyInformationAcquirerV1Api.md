@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\DirectoryCurrencyInformationAcquirerV1Api
+# SpringImport\Swagger\Magento2\Client\DirectoryCurrencyInformationAcquirerV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **directoryCurrencyInformationAcquirerV1GetCurrencyInfoGet**
-> \SpringImport\Magento2SwaggerApi\Model\DirectoryDataCurrencyInformationInterface directoryCurrencyInformationAcquirerV1GetCurrencyInfoGet()
+> \SpringImport\Swagger\Magento2\Client\Model\DirectoryDataCurrencyInformationInterface directoryCurrencyInformationAcquirerV1GetCurrencyInfoGet()
 
 
 
@@ -19,7 +19,7 @@ Get currency information for the store.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\DirectoryCurrencyInformationAcquirerV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\DirectoryCurrencyInformationAcquirerV1Api();
 
 try {
     $result = $api_instance->directoryCurrencyInformationAcquirerV1GetCurrencyInfoGet();
@@ -35,7 +35,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\DirectoryDataCurrencyInformationInterface**](../Model/DirectoryDataCurrencyInformationInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\DirectoryDataCurrencyInformationInterface**](../Model/DirectoryDataCurrencyInformationInterface.md)
 
 ### Authorization
 

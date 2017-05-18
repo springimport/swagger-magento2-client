@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\QuoteGuestPaymentMethodManagementV1Api
+# SpringImport\Swagger\Magento2\Client\QuoteGuestPaymentMethodManagementV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **quoteGuestPaymentMethodManagementV1GetGet**
-> \SpringImport\Magento2SwaggerApi\Model\QuoteDataPaymentInterface quoteGuestPaymentMethodManagementV1GetGet($cartId)
+> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataPaymentInterface quoteGuestPaymentMethodManagementV1GetGet($cartId)
 
 
 
@@ -21,7 +21,7 @@ Return the payment method for a specified shopping cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestPaymentMethodManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestPaymentMethodManagementV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
 
 try {
@@ -41,7 +41,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\QuoteDataPaymentInterface**](../Model/QuoteDataPaymentInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataPaymentInterface**](../Model/QuoteDataPaymentInterface.md)
 
 ### Authorization
 
@@ -55,7 +55,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **quoteGuestPaymentMethodManagementV1GetListGet**
-> \SpringImport\Magento2SwaggerApi\Model\QuoteDataPaymentMethodInterface[] quoteGuestPaymentMethodManagementV1GetListGet($cartId)
+> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataPaymentMethodInterface[] quoteGuestPaymentMethodManagementV1GetListGet($cartId)
 
 
 
@@ -66,7 +66,7 @@ List available payment methods for a specified shopping cart. This call returns 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestPaymentMethodManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestPaymentMethodManagementV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
 
 try {
@@ -86,7 +86,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\QuoteDataPaymentMethodInterface[]**](../Model/QuoteDataPaymentMethodInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataPaymentMethodInterface[]**](../Model/QuoteDataPaymentMethodInterface.md)
 
 ### Authorization
 
@@ -111,9 +111,9 @@ Add a specified payment method to a specified shopping cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestPaymentMethodManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestPaymentMethodManagementV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body7(); // \SpringImport\Magento2SwaggerApi\Model\Body7 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body65(); // \SpringImport\Swagger\Magento2\Client\Model\Body65 | 
 
 try {
     $result = $api_instance->quoteGuestPaymentMethodManagementV1SetPut($cartId, $body);
@@ -129,7 +129,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**| The cart ID. |
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body7**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body7.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body65**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body65.md)|  | [optional]
 
 ### Return type
 

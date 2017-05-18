@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\QuoteGuestCartItemRepositoryV1Api
+# SpringImport\Swagger\Magento2\Client\QuoteGuestCartItemRepositoryV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ Remove the specified item from the specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestCartItemRepositoryV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCartItemRepositoryV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
 $itemId = 56; // int | The item ID of the item to be removed.
 
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **quoteGuestCartItemRepositoryV1GetListGet**
-> \SpringImport\Magento2SwaggerApi\Model\QuoteDataCartItemInterface[] quoteGuestCartItemRepositoryV1GetListGet($cartId)
+> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataCartItemInterface[] quoteGuestCartItemRepositoryV1GetListGet($cartId)
 
 
 
@@ -69,7 +69,7 @@ List items that are assigned to a specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestCartItemRepositoryV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCartItemRepositoryV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
 
 try {
@@ -89,7 +89,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\QuoteDataCartItemInterface[]**](../Model/QuoteDataCartItemInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataCartItemInterface[]**](../Model/QuoteDataCartItemInterface.md)
 
 ### Authorization
 
@@ -103,7 +103,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **quoteGuestCartItemRepositoryV1SavePost**
-> \SpringImport\Magento2SwaggerApi\Model\QuoteDataCartItemInterface quoteGuestCartItemRepositoryV1SavePost($cartId, $body)
+> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataCartItemInterface quoteGuestCartItemRepositoryV1SavePost($cartId, $body)
 
 
 
@@ -114,9 +114,9 @@ Add the specified item to the specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestCartItemRepositoryV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCartItemRepositoryV1Api();
 $cartId = "cartId_example"; // string | 
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body5(); // \SpringImport\Magento2SwaggerApi\Model\Body5 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body61(); // \SpringImport\Swagger\Magento2\Client\Model\Body61 | 
 
 try {
     $result = $api_instance->quoteGuestCartItemRepositoryV1SavePost($cartId, $body);
@@ -132,11 +132,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body5**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body5.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body61**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body61.md)|  | [optional]
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\QuoteDataCartItemInterface**](../Model/QuoteDataCartItemInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataCartItemInterface**](../Model/QuoteDataCartItemInterface.md)
 
 ### Authorization
 
@@ -150,7 +150,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **quoteGuestCartItemRepositoryV1SavePut**
-> \SpringImport\Magento2SwaggerApi\Model\QuoteDataCartItemInterface quoteGuestCartItemRepositoryV1SavePut($cartId, $itemId, $body)
+> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataCartItemInterface quoteGuestCartItemRepositoryV1SavePut($cartId, $itemId, $body)
 
 
 
@@ -161,10 +161,10 @@ Add the specified item to the specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestCartItemRepositoryV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCartItemRepositoryV1Api();
 $cartId = "cartId_example"; // string | 
 $itemId = "itemId_example"; // string | 
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body6(); // \SpringImport\Magento2SwaggerApi\Model\Body6 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body62(); // \SpringImport\Swagger\Magento2\Client\Model\Body62 | 
 
 try {
     $result = $api_instance->quoteGuestCartItemRepositoryV1SavePut($cartId, $itemId, $body);
@@ -181,11 +181,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
  **itemId** | **string**|  |
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body6**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body6.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body62**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body62.md)|  | [optional]
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\QuoteDataCartItemInterface**](../Model/QuoteDataCartItemInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataCartItemInterface**](../Model/QuoteDataCartItemInterface.md)
 
 ### Authorization
 

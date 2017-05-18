@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\GiftMessageGuestItemRepositoryV1Api
+# SpringImport\Swagger\Magento2\Client\GiftMessageGuestItemRepositoryV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **giftMessageGuestItemRepositoryV1GetGet**
-> \SpringImport\Magento2SwaggerApi\Model\GiftMessageDataMessageInterface giftMessageGuestItemRepositoryV1GetGet($cartId, $itemId)
+> \SpringImport\Swagger\Magento2\Client\Model\GiftMessageDataMessageInterface giftMessageGuestItemRepositoryV1GetGet($cartId, $itemId)
 
 
 
@@ -20,7 +20,7 @@ Return the gift message for a specified item in a specified shopping cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\GiftMessageGuestItemRepositoryV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\GiftMessageGuestItemRepositoryV1Api();
 $cartId = "cartId_example"; // string | The shopping cart ID.
 $itemId = 56; // int | The item ID.
 
@@ -42,7 +42,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\GiftMessageDataMessageInterface**](../Model/GiftMessageDataMessageInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\GiftMessageDataMessageInterface**](../Model/GiftMessageDataMessageInterface.md)
 
 ### Authorization
 
@@ -67,10 +67,10 @@ Set the gift message for a specified item in a specified shopping cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\GiftMessageGuestItemRepositoryV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\GiftMessageGuestItemRepositoryV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
 $itemId = 56; // int | The item ID.
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body15(); // \SpringImport\Magento2SwaggerApi\Model\Body15 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body128(); // \SpringImport\Swagger\Magento2\Client\Model\Body128 | 
 
 try {
     $result = $api_instance->giftMessageGuestItemRepositoryV1SavePost($cartId, $itemId, $body);
@@ -87,7 +87,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**| The cart ID. |
  **itemId** | **int**| The item ID. |
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body15**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body15.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body128**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body128.md)|  | [optional]
 
 ### Return type
 

@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\IntegrationCustomerTokenServiceV1Api
+# SpringImport\Swagger\Magento2\Client\IntegrationCustomerTokenServiceV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,8 +19,8 @@ Create access token for admin given the customer credentials.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\IntegrationCustomerTokenServiceV1Api();
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body17(); // \SpringImport\Magento2SwaggerApi\Model\Body17 | 
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\IntegrationCustomerTokenServiceV1Api();
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body137(); // \SpringImport\Swagger\Magento2\Client\Model\Body137 | 
 
 try {
     $result = $api_instance->integrationCustomerTokenServiceV1CreateCustomerAccessTokenPost($body);
@@ -35,7 +35,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body17**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body17.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body137**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body137.md)|  | [optional]
 
 ### Return type
 

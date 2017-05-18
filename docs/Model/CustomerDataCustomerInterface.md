@@ -22,10 +22,10 @@ Name | Type | Description | Notes
 **storeId** | **int** | Store id | [optional] 
 **taxvat** | **string** | Tax Vat | [optional] 
 **websiteId** | **int** | Website id | [optional] 
-**addresses** | [**\SpringImport\Magento2SwaggerApi\Model\CustomerDataAddressInterface[]**](CustomerDataAddressInterface.md) | Customer addresses. | [optional] 
+**addresses** | [**\SpringImport\Swagger\Magento2\Client\Model\CustomerDataAddressInterface[]**](CustomerDataAddressInterface.md) | Customer addresses. | [optional] 
 **disableAutoGroupChange** | **int** | Disable auto group change flag. | [optional] 
-**extensionAttributes** | [**\SpringImport\Magento2SwaggerApi\Model\CustomerDataCustomerExtensionInterface**](CustomerDataCustomerExtensionInterface.md) |  | [optional] 
-**customAttributes** | [**\SpringImport\Magento2SwaggerApi\Model\FrameworkAttributeInterface[]**](FrameworkAttributeInterface.md) | Custom attributes values. | [optional] 
+**extensionAttributes** | [**\SpringImport\Swagger\Magento2\Client\Model\CustomerDataCustomerExtensionInterface**](CustomerDataCustomerExtensionInterface.md) |  | [optional] 
+**customAttributes** | [**\SpringImport\Swagger\Magento2\Client\Model\FrameworkAttributeInterface[]**](FrameworkAttributeInterface.md) | Custom attributes values. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

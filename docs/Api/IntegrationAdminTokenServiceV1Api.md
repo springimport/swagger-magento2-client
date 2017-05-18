@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\IntegrationAdminTokenServiceV1Api
+# SpringImport\Swagger\Magento2\Client\IntegrationAdminTokenServiceV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -19,8 +19,8 @@ Create access token for admin given the admin credentials.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\IntegrationAdminTokenServiceV1Api();
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body16(); // \SpringImport\Magento2SwaggerApi\Model\Body16 | 
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\IntegrationAdminTokenServiceV1Api();
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body136(); // \SpringImport\Swagger\Magento2\Client\Model\Body136 | 
 
 try {
     $result = $api_instance->integrationAdminTokenServiceV1CreateAdminAccessTokenPost($body);
@@ -35,7 +35,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body16**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body16.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body136**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body136.md)|  | [optional]
 
 ### Return type
 

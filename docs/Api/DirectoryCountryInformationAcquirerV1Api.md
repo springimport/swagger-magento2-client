@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\DirectoryCountryInformationAcquirerV1Api
+# SpringImport\Swagger\Magento2\Client\DirectoryCountryInformationAcquirerV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **directoryCountryInformationAcquirerV1GetCountriesInfoGet**
-> \SpringImport\Magento2SwaggerApi\Model\DirectoryDataCountryInformationInterface[] directoryCountryInformationAcquirerV1GetCountriesInfoGet()
+> \SpringImport\Swagger\Magento2\Client\Model\DirectoryDataCountryInformationInterface[] directoryCountryInformationAcquirerV1GetCountriesInfoGet()
 
 
 
@@ -20,7 +20,7 @@ Get all countries and regions information for the store.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\DirectoryCountryInformationAcquirerV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\DirectoryCountryInformationAcquirerV1Api();
 
 try {
     $result = $api_instance->directoryCountryInformationAcquirerV1GetCountriesInfoGet();
@@ -36,7 +36,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\DirectoryDataCountryInformationInterface[]**](../Model/DirectoryDataCountryInformationInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\DirectoryDataCountryInformationInterface[]**](../Model/DirectoryDataCountryInformationInterface.md)
 
 ### Authorization
 
@@ -50,7 +50,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **directoryCountryInformationAcquirerV1GetCountryInfoGet**
-> \SpringImport\Magento2SwaggerApi\Model\DirectoryDataCountryInformationInterface directoryCountryInformationAcquirerV1GetCountryInfoGet($countryId)
+> \SpringImport\Swagger\Magento2\Client\Model\DirectoryDataCountryInformationInterface directoryCountryInformationAcquirerV1GetCountryInfoGet($countryId)
 
 
 
@@ -61,7 +61,7 @@ Get country and region information for the store.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\DirectoryCountryInformationAcquirerV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\DirectoryCountryInformationAcquirerV1Api();
 $countryId = "countryId_example"; // string | 
 
 try {
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\DirectoryDataCountryInformationInterface**](../Model/DirectoryDataCountryInformationInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\DirectoryDataCountryInformationInterface**](../Model/DirectoryDataCountryInformationInterface.md)
 
 ### Authorization
 

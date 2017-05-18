@@ -28,9 +28,9 @@ Name | Type | Description | Notes
 **quoteCurrencyCode** | **string** | Quote currency code | [optional] 
 **couponCode** | **string** | Applied coupon code | [optional] 
 **itemsQty** | **int** | Items qty | [optional] 
-**items** | [**\SpringImport\Magento2SwaggerApi\Model\QuoteDataTotalsItemInterface[]**](QuoteDataTotalsItemInterface.md) | Totals by items | [optional] 
-**totalSegments** | [**\SpringImport\Magento2SwaggerApi\Model\QuoteDataTotalSegmentInterface[]**](QuoteDataTotalSegmentInterface.md) | Dynamically calculated totals | 
-**extensionAttributes** | [**\SpringImport\Magento2SwaggerApi\Model\QuoteDataTotalsExtensionInterface**](QuoteDataTotalsExtensionInterface.md) |  | [optional] 
+**items** | [**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataTotalsItemInterface[]**](QuoteDataTotalsItemInterface.md) | Totals by items | [optional] 
+**totalSegments** | [**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataTotalSegmentInterface[]**](QuoteDataTotalSegmentInterface.md) | Dynamically calculated totals | 
+**extensionAttributes** | [**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataTotalsExtensionInterface**](QuoteDataTotalsExtensionInterface.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

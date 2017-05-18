@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\CheckoutGuestPaymentInformationManagementV1Api
+# SpringImport\Swagger\Magento2\Client\CheckoutGuestPaymentInformationManagementV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **checkoutGuestPaymentInformationManagementV1GetPaymentInformationGet**
-> \SpringImport\Magento2SwaggerApi\Model\CheckoutDataPaymentDetailsInterface checkoutGuestPaymentInformationManagementV1GetPaymentInformationGet($cartId)
+> \SpringImport\Swagger\Magento2\Client\Model\CheckoutDataPaymentDetailsInterface checkoutGuestPaymentInformationManagementV1GetPaymentInformationGet($cartId)
 
 
 
@@ -21,7 +21,7 @@ Get payment information
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\CheckoutGuestPaymentInformationManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\CheckoutGuestPaymentInformationManagementV1Api();
 $cartId = "cartId_example"; // string | 
 
 try {
@@ -41,7 +41,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\CheckoutDataPaymentDetailsInterface**](../Model/CheckoutDataPaymentDetailsInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\CheckoutDataPaymentDetailsInterface**](../Model/CheckoutDataPaymentDetailsInterface.md)
 
 ### Authorization
 
@@ -66,9 +66,9 @@ Set payment information and place order for a specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\CheckoutGuestPaymentInformationManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\CheckoutGuestPaymentInformationManagementV1Api();
 $cartId = "cartId_example"; // string | 
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body12(); // \SpringImport\Magento2SwaggerApi\Model\Body12 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body100(); // \SpringImport\Swagger\Magento2\Client\Model\Body100 | 
 
 try {
     $result = $api_instance->checkoutGuestPaymentInformationManagementV1SavePaymentInformationAndPlaceOrderPost($cartId, $body);
@@ -84,7 +84,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body12**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body12.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body100**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body100.md)|  | [optional]
 
 ### Return type
 
@@ -113,9 +113,9 @@ Set payment information for a specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\CheckoutGuestPaymentInformationManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\CheckoutGuestPaymentInformationManagementV1Api();
 $cartId = "cartId_example"; // string | 
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body13(); // \SpringImport\Magento2SwaggerApi\Model\Body13 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body101(); // \SpringImport\Swagger\Magento2\Client\Model\Body101 | 
 
 try {
     $result = $api_instance->checkoutGuestPaymentInformationManagementV1SavePaymentInformationPost($cartId, $body);
@@ -131,7 +131,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body13**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body13.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body101**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body101.md)|  | [optional]
 
 ### Return type
 

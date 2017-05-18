@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\QuoteGuestCouponManagementV1Api
+# SpringImport\Swagger\Magento2\Client\QuoteGuestCouponManagementV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ Return information for a coupon in a specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestCouponManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCouponManagementV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
 
 try {
@@ -66,7 +66,7 @@ Delete a coupon from a specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestCouponManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCouponManagementV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
 
 try {
@@ -111,7 +111,7 @@ Add a coupon by code to a specified cart.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\QuoteGuestCouponManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCouponManagementV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
 $couponCode = "couponCode_example"; // string | The coupon code data.
 

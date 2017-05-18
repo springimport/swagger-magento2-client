@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\CheckoutGuestTotalsInformationManagementV1Api
+# SpringImport\Swagger\Magento2\Client\CheckoutGuestTotalsInformationManagementV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **checkoutGuestTotalsInformationManagementV1CalculatePost**
-> \SpringImport\Magento2SwaggerApi\Model\QuoteDataTotalsInterface checkoutGuestTotalsInformationManagementV1CalculatePost($cartId, $body)
+> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataTotalsInterface checkoutGuestTotalsInformationManagementV1CalculatePost($cartId, $body)
 
 
 
@@ -19,9 +19,9 @@ Calculate quote totals based on address and shipping method.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\CheckoutGuestTotalsInformationManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\CheckoutGuestTotalsInformationManagementV1Api();
 $cartId = "cartId_example"; // string | 
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body11(); // \SpringImport\Magento2SwaggerApi\Model\Body11 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body99(); // \SpringImport\Swagger\Magento2\Client\Model\Body99 | 
 
 try {
     $result = $api_instance->checkoutGuestTotalsInformationManagementV1CalculatePost($cartId, $body);
@@ -37,11 +37,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body11**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body11.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body99**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body99.md)|  | [optional]
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\QuoteDataTotalsInterface**](../Model/QuoteDataTotalsInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\QuoteDataTotalsInterface**](../Model/QuoteDataTotalsInterface.md)
 
 ### Authorization
 

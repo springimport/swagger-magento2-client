@@ -1,6 +1,6 @@
-# SpringImport\Magento2SwaggerApi\CheckoutGuestShippingInformationManagementV1Api
+# SpringImport\Swagger\Magento2\Client\CheckoutGuestShippingInformationManagementV1Api
 
-All URIs are relative to *http://springimport.dev/rest/default*
+All URIs are relative to *http://t213.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **checkoutGuestShippingInformationManagementV1SaveAddressInformationPost**
-> \SpringImport\Magento2SwaggerApi\Model\CheckoutDataPaymentDetailsInterface checkoutGuestShippingInformationManagementV1SaveAddressInformationPost($cartId, $body)
+> \SpringImport\Swagger\Magento2\Client\Model\CheckoutDataPaymentDetailsInterface checkoutGuestShippingInformationManagementV1SaveAddressInformationPost($cartId, $body)
 
 
 
@@ -19,9 +19,9 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new SpringImport\Magento2SwaggerApi\Api\CheckoutGuestShippingInformationManagementV1Api();
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\CheckoutGuestShippingInformationManagementV1Api();
 $cartId = "cartId_example"; // string | 
-$body = new \SpringImport\Magento2SwaggerApi\Model\Body10(); // \SpringImport\Magento2SwaggerApi\Model\Body10 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body94(); // \SpringImport\Swagger\Magento2\Client\Model\Body94 | 
 
 try {
     $result = $api_instance->checkoutGuestShippingInformationManagementV1SaveAddressInformationPost($cartId, $body);
@@ -37,11 +37,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
- **body** | [**\SpringImport\Magento2SwaggerApi\Model\Body10**](../Model/\SpringImport\Magento2SwaggerApi\Model\Body10.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body94**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body94.md)|  | [optional]
 
 ### Return type
 
-[**\SpringImport\Magento2SwaggerApi\Model\CheckoutDataPaymentDetailsInterface**](../Model/CheckoutDataPaymentDetailsInterface.md)
+[**\SpringImport\Swagger\Magento2\Client\Model\CheckoutDataPaymentDetailsInterface**](../Model/CheckoutDataPaymentDetailsInterface.md)
 
 ### Authorization
 

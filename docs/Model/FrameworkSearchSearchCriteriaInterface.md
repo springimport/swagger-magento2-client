@@ -3,11 +3,11 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**request_name** | **string** |  | 
-**filter_groups** | [**\Swagger\Client\Model\FrameworkSearchFilterGroup[]**](FrameworkSearchFilterGroup.md) | A list of filter groups. | 
-**sort_orders** | [**\Swagger\Client\Model\FrameworkSortOrder[]**](FrameworkSortOrder.md) | Sort order. | [optional] 
-**page_size** | **int** | Page size. | [optional] 
-**current_page** | **int** | Current page. | [optional] 
+**requestName** | **string** |  | 
+**filterGroups** | [**\SpringImport\Magento2SwaggerApi\Model\FrameworkSearchFilterGroup[]**](FrameworkSearchFilterGroup.md) | A list of filter groups. | 
+**sortOrders** | [**\SpringImport\Magento2SwaggerApi\Model\FrameworkSortOrder[]**](FrameworkSortOrder.md) | Sort order. | [optional] 
+**pageSize** | **int** | Page size. | [optional] 
+**currentPage** | **int** | Current page. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

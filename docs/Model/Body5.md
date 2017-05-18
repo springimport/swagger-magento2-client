@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**address** | [**\Swagger\Client\Model\QuoteDataEstimateAddressInterface**](QuoteDataEstimateAddressInterface.md) |  | 
+**cartItem** | [**\SpringImport\Magento2SwaggerApi\Model\QuoteDataCartItemInterface**](QuoteDataCartItemInterface.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

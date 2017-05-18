@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**base64_encoded_data** | **string** | Media data (base64 encoded content) | 
+**base64EncodedData** | **string** | Media data (base64 encoded content) | 
 **type** | **string** | MIME type | 
 **name** | **string** | Image name | 
 

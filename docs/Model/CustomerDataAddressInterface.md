@@ -4,10 +4,10 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | ID | [optional] 
-**customer_id** | **int** | Customer ID | [optional] 
-**region** | [**\Swagger\Client\Model\CustomerDataRegionInterface**](CustomerDataRegionInterface.md) |  | [optional] 
-**region_id** | **int** | Region ID | [optional] 
-**country_id** | **string** | Country code in ISO_3166-2 format | [optional] 
+**customerId** | **int** | Customer ID | [optional] 
+**region** | [**\SpringImport\Magento2SwaggerApi\Model\CustomerDataRegionInterface**](CustomerDataRegionInterface.md) |  | [optional] 
+**regionId** | **int** | Region ID | [optional] 
+**countryId** | **string** | Country code in ISO_3166-2 format | [optional] 
 **street** | **string[]** | Street | [optional] 
 **company** | **string** | Company | [optional] 
 **telephone** | **string** | Telephone number | [optional] 
@@ -19,11 +19,11 @@ Name | Type | Description | Notes
 **middlename** | **string** | Middle name | [optional] 
 **prefix** | **string** | Prefix | [optional] 
 **suffix** | **string** | Suffix | [optional] 
-**vat_id** | **string** | Vat id | [optional] 
-**default_shipping** | **bool** | If this address is default shipping address. | [optional] 
-**default_billing** | **bool** | If this address is default billing address | [optional] 
-**extension_attributes** | [**\Swagger\Client\Model\CustomerDataAddressExtensionInterface**](CustomerDataAddressExtensionInterface.md) |  | [optional] 
-**custom_attributes** | [**\Swagger\Client\Model\FrameworkAttributeInterface[]**](FrameworkAttributeInterface.md) | Custom attributes values. | [optional] 
+**vatId** | **string** | Vat id | [optional] 
+**defaultShipping** | **bool** | If this address is default shipping address. | [optional] 
+**defaultBilling** | **bool** | If this address is default billing address | [optional] 
+**extensionAttributes** | [**\SpringImport\Magento2SwaggerApi\Model\CustomerDataAddressExtensionInterface**](CustomerDataAddressExtensionInterface.md) |  | [optional] 
+**customAttributes** | [**\SpringImport\Magento2SwaggerApi\Model\FrameworkAttributeInterface[]**](FrameworkAttributeInterface.md) | Custom attributes values. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

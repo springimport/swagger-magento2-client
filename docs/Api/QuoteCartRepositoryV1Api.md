@@ -55,7 +55,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **quoteCartRepositoryV1GetListGet**
-> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataCartSearchResultsInterface quoteCartRepositoryV1GetListGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+> \SpringImport\Swagger\Magento2\Client\Model\QuoteDataCartSearchResultsInterface quoteCartRepositoryV1GetListGet($searchCriteriaFilterGroups0Filters0Field, $searchCriteriaFilterGroups0Filters0Value, $searchCriteriaFilterGroups0Filters0ConditionType, $searchCriteriaSortOrders0Field, $searchCriteriaSortOrders0Direction, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
 
 
 
@@ -67,16 +67,16 @@ Enables administrative users to list carts that match specified search criteria.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteCartRepositoryV1Api();
-$searchCriteriaFilterGroupsFiltersField = "searchCriteriaFilterGroupsFiltersField_example"; // string | Field
-$searchCriteriaFilterGroupsFiltersValue = "searchCriteriaFilterGroupsFiltersValue_example"; // string | Value
-$searchCriteriaFilterGroupsFiltersConditionType = "searchCriteriaFilterGroupsFiltersConditionType_example"; // string | Condition type
-$searchCriteriaSortOrdersField = "searchCriteriaSortOrdersField_example"; // string | Sorting field.
-$searchCriteriaSortOrdersDirection = "searchCriteriaSortOrdersDirection_example"; // string | Sorting direction.
+$searchCriteriaFilterGroups0Filters0Field = "searchCriteriaFilterGroups0Filters0Field_example"; // string | Field
+$searchCriteriaFilterGroups0Filters0Value = "searchCriteriaFilterGroups0Filters0Value_example"; // string | Value
+$searchCriteriaFilterGroups0Filters0ConditionType = "searchCriteriaFilterGroups0Filters0ConditionType_example"; // string | Condition type
+$searchCriteriaSortOrders0Field = "searchCriteriaSortOrders0Field_example"; // string | Sorting field.
+$searchCriteriaSortOrders0Direction = "searchCriteriaSortOrders0Direction_example"; // string | Sorting direction.
 $searchCriteriaPageSize = 56; // int | Page size.
 $searchCriteriaCurrentPage = 56; // int | Current page.
 
 try {
-    $result = $api_instance->quoteCartRepositoryV1GetListGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+    $result = $api_instance->quoteCartRepositoryV1GetListGet($searchCriteriaFilterGroups0Filters0Field, $searchCriteriaFilterGroups0Filters0Value, $searchCriteriaFilterGroups0Filters0ConditionType, $searchCriteriaSortOrders0Field, $searchCriteriaSortOrders0Direction, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling QuoteCartRepositoryV1Api->quoteCartRepositoryV1GetListGet: ', $e->getMessage(), PHP_EOL;
@@ -88,11 +88,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **searchCriteriaFilterGroupsFiltersField** | **string**| Field | [optional]
- **searchCriteriaFilterGroupsFiltersValue** | **string**| Value | [optional]
- **searchCriteriaFilterGroupsFiltersConditionType** | **string**| Condition type | [optional]
- **searchCriteriaSortOrdersField** | **string**| Sorting field. | [optional]
- **searchCriteriaSortOrdersDirection** | **string**| Sorting direction. | [optional]
+ **searchCriteriaFilterGroups0Filters0Field** | **string**| Field | [optional]
+ **searchCriteriaFilterGroups0Filters0Value** | **string**| Value | [optional]
+ **searchCriteriaFilterGroups0Filters0ConditionType** | **string**| Condition type | [optional]
+ **searchCriteriaSortOrders0Field** | **string**| Sorting field. | [optional]
+ **searchCriteriaSortOrders0Direction** | **string**| Sorting direction. | [optional]
  **searchCriteriaPageSize** | **int**| Page size. | [optional]
  **searchCriteriaCurrentPage** | **int**| Current page. | [optional]
 

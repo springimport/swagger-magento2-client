@@ -381,19 +381,19 @@ class CustomerCustomerRepositoryV1Api
      *
      * 
      *
-     * @param string $searchCriteriaFilterGroupsFiltersField Field (optional)
-     * @param string $searchCriteriaFilterGroupsFiltersValue Value (optional)
-     * @param string $searchCriteriaFilterGroupsFiltersConditionType Condition type (optional)
-     * @param string $searchCriteriaSortOrdersField Sorting field. (optional)
-     * @param string $searchCriteriaSortOrdersDirection Sorting direction. (optional)
+     * @param string $searchCriteriaFilterGroups0Filters0Field Field (optional)
+     * @param string $searchCriteriaFilterGroups0Filters0Value Value (optional)
+     * @param string $searchCriteriaFilterGroups0Filters0ConditionType Condition type (optional)
+     * @param string $searchCriteriaSortOrders0Field Sorting field. (optional)
+     * @param string $searchCriteriaSortOrders0Direction Sorting direction. (optional)
      * @param int $searchCriteriaPageSize Page size. (optional)
      * @param int $searchCriteriaCurrentPage Current page. (optional)
      * @throws \SpringImport\Swagger\Magento2\Client\ApiException on non-2xx response
      * @return \SpringImport\Swagger\Magento2\Client\Model\CustomerDataCustomerSearchResultsInterface
      */
-    public function customerCustomerRepositoryV1GetListGet($searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function customerCustomerRepositoryV1GetListGet($searchCriteriaFilterGroups0Filters0Field = null, $searchCriteriaFilterGroups0Filters0Value = null, $searchCriteriaFilterGroups0Filters0ConditionType = null, $searchCriteriaSortOrders0Field = null, $searchCriteriaSortOrders0Direction = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
     {
-        list($response) = $this->customerCustomerRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->customerCustomerRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroups0Filters0Field, $searchCriteriaFilterGroups0Filters0Value, $searchCriteriaFilterGroups0Filters0ConditionType, $searchCriteriaSortOrders0Field, $searchCriteriaSortOrders0Direction, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
         return $response;
     }
 
@@ -402,17 +402,17 @@ class CustomerCustomerRepositoryV1Api
      *
      * 
      *
-     * @param string $searchCriteriaFilterGroupsFiltersField Field (optional)
-     * @param string $searchCriteriaFilterGroupsFiltersValue Value (optional)
-     * @param string $searchCriteriaFilterGroupsFiltersConditionType Condition type (optional)
-     * @param string $searchCriteriaSortOrdersField Sorting field. (optional)
-     * @param string $searchCriteriaSortOrdersDirection Sorting direction. (optional)
+     * @param string $searchCriteriaFilterGroups0Filters0Field Field (optional)
+     * @param string $searchCriteriaFilterGroups0Filters0Value Value (optional)
+     * @param string $searchCriteriaFilterGroups0Filters0ConditionType Condition type (optional)
+     * @param string $searchCriteriaSortOrders0Field Sorting field. (optional)
+     * @param string $searchCriteriaSortOrders0Direction Sorting direction. (optional)
      * @param int $searchCriteriaPageSize Page size. (optional)
      * @param int $searchCriteriaCurrentPage Current page. (optional)
      * @throws \SpringImport\Swagger\Magento2\Client\ApiException on non-2xx response
      * @return array of \SpringImport\Swagger\Magento2\Client\Model\CustomerDataCustomerSearchResultsInterface, HTTP status code, HTTP response headers (array of strings)
      */
-    public function customerCustomerRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function customerCustomerRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroups0Filters0Field = null, $searchCriteriaFilterGroups0Filters0Value = null, $searchCriteriaFilterGroups0Filters0ConditionType = null, $searchCriteriaSortOrders0Field = null, $searchCriteriaSortOrders0Direction = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
     {
         // parse inputs
         $resourcePath = "/V1/customers/search";
@@ -427,24 +427,24 @@ class CustomerCustomerRepositoryV1Api
         $headerParams['Content-Type'] = $this->apiClient->selectHeaderContentType([]);
 
         // query params
-        if ($searchCriteriaFilterGroupsFiltersField !== null) {
-            $queryParams['searchCriteria[filterGroups][][filters][][field]'] = $this->apiClient->getSerializer()->toQueryValue($searchCriteriaFilterGroupsFiltersField);
+        if ($searchCriteriaFilterGroups0Filters0Field !== null) {
+            $queryParams['searchCriteria[filterGroups][0][filters][0][field]'] = $this->apiClient->getSerializer()->toQueryValue($searchCriteriaFilterGroups0Filters0Field);
         }
         // query params
-        if ($searchCriteriaFilterGroupsFiltersValue !== null) {
-            $queryParams['searchCriteria[filterGroups][][filters][][value]'] = $this->apiClient->getSerializer()->toQueryValue($searchCriteriaFilterGroupsFiltersValue);
+        if ($searchCriteriaFilterGroups0Filters0Value !== null) {
+            $queryParams['searchCriteria[filterGroups][0][filters][0][value]'] = $this->apiClient->getSerializer()->toQueryValue($searchCriteriaFilterGroups0Filters0Value);
         }
         // query params
-        if ($searchCriteriaFilterGroupsFiltersConditionType !== null) {
-            $queryParams['searchCriteria[filterGroups][][filters][][conditionType]'] = $this->apiClient->getSerializer()->toQueryValue($searchCriteriaFilterGroupsFiltersConditionType);
+        if ($searchCriteriaFilterGroups0Filters0ConditionType !== null) {
+            $queryParams['searchCriteria[filterGroups][0][filters][0][conditionType]'] = $this->apiClient->getSerializer()->toQueryValue($searchCriteriaFilterGroups0Filters0ConditionType);
         }
         // query params
-        if ($searchCriteriaSortOrdersField !== null) {
-            $queryParams['searchCriteria[sortOrders][][field]'] = $this->apiClient->getSerializer()->toQueryValue($searchCriteriaSortOrdersField);
+        if ($searchCriteriaSortOrders0Field !== null) {
+            $queryParams['searchCriteria[sortOrders][0][field]'] = $this->apiClient->getSerializer()->toQueryValue($searchCriteriaSortOrders0Field);
         }
         // query params
-        if ($searchCriteriaSortOrdersDirection !== null) {
-            $queryParams['searchCriteria[sortOrders][][direction]'] = $this->apiClient->getSerializer()->toQueryValue($searchCriteriaSortOrdersDirection);
+        if ($searchCriteriaSortOrders0Direction !== null) {
+            $queryParams['searchCriteria[sortOrders][0][direction]'] = $this->apiClient->getSerializer()->toQueryValue($searchCriteriaSortOrders0Direction);
         }
         // query params
         if ($searchCriteriaPageSize !== null) {

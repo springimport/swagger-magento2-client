@@ -236,7 +236,7 @@ class ObjectSerializer
                 $values[] = self::deserialize($value, $subClass, null);
             }
             return $values;
-        } elseif ($class === 'object' or is_array($class)) {
+        } elseif ($class === 'object' or is_array($data)) {
             settype($data, 'array');
             return $data;
         } elseif ($class === '\DateTime') {

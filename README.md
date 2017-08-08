@@ -63,7 +63,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://example.com/rest/default*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

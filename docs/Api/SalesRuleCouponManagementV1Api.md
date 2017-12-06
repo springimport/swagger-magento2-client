@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\SalesRuleCouponManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ Delete coupon by coupon codes.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\SalesRuleCouponManagementV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body93(); // \SpringImport\Swagger\Magento2\Client\Model\Body93 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body116(); // \SpringImport\Swagger\Magento2\Client\Model\Body116 | 
 
 try {
     $result = $api_instance->salesRuleCouponManagementV1DeleteByCodesPost($body);
@@ -37,7 +37,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body93**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body93.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body116**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body116.md)|  | [optional]
 
 ### Return type
 
@@ -67,7 +67,7 @@ Delete coupon by coupon ids.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\SalesRuleCouponManagementV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body92(); // \SpringImport\Swagger\Magento2\Client\Model\Body92 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body115(); // \SpringImport\Swagger\Magento2\Client\Model\Body115 | 
 
 try {
     $result = $api_instance->salesRuleCouponManagementV1DeleteByIdsPost($body);
@@ -82,7 +82,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body92**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body92.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body115**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body115.md)|  | [optional]
 
 ### Return type
 
@@ -112,7 +112,7 @@ Generate coupon for a rule
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\SalesRuleCouponManagementV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body91(); // \SpringImport\Swagger\Magento2\Client\Model\Body91 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body114(); // \SpringImport\Swagger\Magento2\Client\Model\Body114 | 
 
 try {
     $result = $api_instance->salesRuleCouponManagementV1GeneratePost($body);
@@ -127,7 +127,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body91**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body91.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body114**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body114.md)|  | [optional]
 
 ### Return type
 

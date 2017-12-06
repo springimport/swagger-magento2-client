@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\QuoteGuestShipmentEstimationV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestShipmentEstimationV1Api();
 $cartId = "cartId_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body56(); // \SpringImport\Swagger\Magento2\Client\Model\Body56 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body68(); // \SpringImport\Swagger\Magento2\Client\Model\Body68 | 
 
 try {
     $result = $api_instance->quoteGuestShipmentEstimationV1EstimateByExtendedAddressPost($cartId, $body);
@@ -37,7 +37,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body56**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body56.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body68**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body68.md)|  | [optional]
 
 ### Return type
 

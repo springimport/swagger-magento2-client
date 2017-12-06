@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\SalesOrderManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\SalesOrderManagementV1Api();
 $id = 56; // int | The order ID.
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body73(); // \SpringImport\Swagger\Magento2\Client\Model\Body73 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body86(); // \SpringImport\Swagger\Magento2\Client\Model\Body86 | 
 
 try {
     $result = $api_instance->salesOrderManagementV1AddCommentPost($id, $body);
@@ -43,7 +43,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**| The order ID. |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body73**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body73.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body86**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body86.md)|  | [optional]
 
 ### Return type
 

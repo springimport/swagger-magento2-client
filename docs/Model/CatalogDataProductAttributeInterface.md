@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 **attributeId** | **int** | Id of the attribute. | [optional] 
 **attributeCode** | **string** | Code of the attribute. | 
 **frontendInput** | **string** | HTML for input element. | 
-**entityTypeId** | **string** | Entity type id | [optional] 
+**entityTypeId** | **string** | Entity type id | 
 **isRequired** | **bool** | Attribute is required. | 
 **options** | [**\SpringImport\Swagger\Magento2\Client\Model\EavDataAttributeOptionInterface[]**](EavDataAttributeOptionInterface.md) | Options of the attribute (key &#x3D;&gt; value pairs for select) | [optional] 
 **isUserDefined** | **bool** | Current attribute has been defined by a user. | [optional] 

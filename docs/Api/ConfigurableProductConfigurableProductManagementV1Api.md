@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\ConfigurableProductConfigurableProductManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Generate variation based on same product
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\ConfigurableProductConfigurableProductManagementV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body109(); // \SpringImport\Swagger\Magento2\Client\Model\Body109 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body118(); // \SpringImport\Swagger\Magento2\Client\Model\Body118 | 
 
 try {
     $result = $api_instance->configurableProductConfigurableProductManagementV1GenerateVariationPut($body);
@@ -35,7 +35,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body109**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body109.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body118**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body118.md)|  | [optional]
 
 ### Return type
 

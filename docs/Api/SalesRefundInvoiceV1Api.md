@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\SalesRefundInvoiceV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\SalesRefundInvoiceV1Api();
 $invoiceId = 56; // int | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body77(); // \SpringImport\Swagger\Magento2\Client\Model\Body77 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body90(); // \SpringImport\Swagger\Magento2\Client\Model\Body90 | 
 
 try {
     $result = $api_instance->salesRefundInvoiceV1ExecutePost($invoiceId, $body);
@@ -37,7 +37,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **invoiceId** | **int**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body77**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body77.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body90**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body90.md)|  | [optional]
 
 ### Return type
 

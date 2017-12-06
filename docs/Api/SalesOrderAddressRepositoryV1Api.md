@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\SalesOrderAddressRepositoryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\SalesOrderAddressRepositoryV1Api();
 $parentId = "parentId_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body74(); // \SpringImport\Swagger\Magento2\Client\Model\Body74 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body87(); // \SpringImport\Swagger\Magento2\Client\Model\Body87 | 
 
 try {
     $result = $api_instance->salesOrderAddressRepositoryV1SavePut($parentId, $body);
@@ -37,7 +37,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **parentId** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body74**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body74.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body87**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body87.md)|  | [optional]
 
 ### Return type
 

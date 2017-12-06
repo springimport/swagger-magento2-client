@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\GiftMessageItemRepositoryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -117,7 +117,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\GiftMessageItemRepositoryV1Api();
 $cartId = 56; // int | The cart ID.
 $itemId = 56; // int | The item ID.
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body125(); // \SpringImport\Swagger\Magento2\Client\Model\Body125 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body169(); // \SpringImport\Swagger\Magento2\Client\Model\Body169 | 
 
 try {
     $result = $api_instance->giftMessageItemRepositoryV1SavePost($cartId, $itemId, $body);
@@ -134,7 +134,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **int**| The cart ID. |
  **itemId** | **int**| The item ID. |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body125**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body125.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body169**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body169.md)|  | [optional]
 
 ### Return type
 
@@ -165,7 +165,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\GiftMessageItemRepositoryV1Api();
 $itemId = 56; // int | The item ID.
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body126(); // \SpringImport\Swagger\Magento2\Client\Model\Body126 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body170(); // \SpringImport\Swagger\Magento2\Client\Model\Body170 | 
 
 try {
     $result = $api_instance->giftMessageItemRepositoryV1SavePost_0($itemId, $body);
@@ -181,7 +181,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **itemId** | **int**| The item ID. |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body126**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body126.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body170**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body170.md)|  | [optional]
 
 ### Return type
 

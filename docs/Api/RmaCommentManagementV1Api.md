@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\RmaCommentManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\RmaCommentManagementV1Api();
 $id = "id_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body134(); // \SpringImport\Swagger\Magento2\Client\Model\Body134 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body182(); // \SpringImport\Swagger\Magento2\Client\Model\Body182 | 
 
 try {
     $result = $api_instance->rmaCommentManagementV1AddCommentPost($id, $body);
@@ -38,7 +38,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body134**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body134.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body182**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body182.md)|  | [optional]
 
 ### Return type
 

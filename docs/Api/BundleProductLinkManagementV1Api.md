@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\BundleProductLinkManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\BundleProductLinkManagementV1Api();
 $sku = "sku_example"; // string | 
 $optionId = 56; // int | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body42(); // \SpringImport\Swagger\Magento2\Client\Model\Body42 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body54(); // \SpringImport\Swagger\Magento2\Client\Model\Body54 | 
 
 try {
     $result = $api_instance->bundleProductLinkManagementV1AddChildByProductSkuPost($sku, $optionId, $body);
@@ -42,7 +42,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sku** | **string**|  |
  **optionId** | **int**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body42**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body42.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body54**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body54.md)|  | [optional]
 
 ### Return type
 
@@ -170,7 +170,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\BundleProductLinkManagementV1Api();
 $sku = "sku_example"; // string | 
 $id = "id_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body43(); // \SpringImport\Swagger\Magento2\Client\Model\Body43 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body55(); // \SpringImport\Swagger\Magento2\Client\Model\Body55 | 
 
 try {
     $result = $api_instance->bundleProductLinkManagementV1SaveChildPut($sku, $id, $body);
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sku** | **string**|  |
  **id** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body43**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body43.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body55**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body55.md)|  | [optional]
 
 ### Return type
 

@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\DownloadableLinkRepositoryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -114,7 +114,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\DownloadableLinkRepositoryV1Api();
 $sku = "sku_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body104(); // \SpringImport\Swagger\Magento2\Client\Model\Body104 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body121(); // \SpringImport\Swagger\Magento2\Client\Model\Body121 | 
 
 try {
     $result = $api_instance->downloadableLinkRepositoryV1SavePost($sku, $body);
@@ -130,7 +130,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sku** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body104**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body104.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body121**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body121.md)|  | [optional]
 
 ### Return type
 
@@ -162,7 +162,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\DownloadableLinkRepositoryV1Api();
 $sku = "sku_example"; // string | 
 $id = "id_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body105(); // \SpringImport\Swagger\Magento2\Client\Model\Body105 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body122(); // \SpringImport\Swagger\Magento2\Client\Model\Body122 | 
 
 try {
     $result = $api_instance->downloadableLinkRepositoryV1SavePut($sku, $id, $body);
@@ -179,7 +179,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sku** | **string**|  |
  **id** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body105**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body105.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body122**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body122.md)|  | [optional]
 
 ### Return type
 

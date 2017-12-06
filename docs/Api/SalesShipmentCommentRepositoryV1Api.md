@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\SalesShipmentCommentRepositoryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\SalesShipmentCommentRepositoryV1Api();
 $id = "id_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body83(); // \SpringImport\Swagger\Magento2\Client\Model\Body83 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body96(); // \SpringImport\Swagger\Magento2\Client\Model\Body96 | 
 
 try {
     $result = $api_instance->salesShipmentCommentRepositoryV1SavePost($id, $body);
@@ -37,7 +37,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body83**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body83.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body96**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body96.md)|  | [optional]
 
 ### Return type
 

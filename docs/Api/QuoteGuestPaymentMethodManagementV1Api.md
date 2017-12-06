@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\QuoteGuestPaymentMethodManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -113,7 +113,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestPaymentMethodManagementV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body65(); // \SpringImport\Swagger\Magento2\Client\Model\Body65 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body77(); // \SpringImport\Swagger\Magento2\Client\Model\Body77 | 
 
 try {
     $result = $api_instance->quoteGuestPaymentMethodManagementV1SetPut($cartId, $body);
@@ -129,7 +129,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**| The cart ID. |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body65**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body65.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body77**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body77.md)|  | [optional]
 
 ### Return type
 

@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\TaxTaxRateRepositoryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -102,7 +102,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **taxTaxRateRepositoryV1GetListGet**
-> \SpringImport\Swagger\Magento2\Client\Model\TaxDataTaxRateSearchResultsInterface taxTaxRateRepositoryV1GetListGet($searchCriteriaFilterGroups0Filters0Field, $searchCriteriaFilterGroups0Filters0Value, $searchCriteriaFilterGroups0Filters0ConditionType, $searchCriteriaSortOrders0Field, $searchCriteriaSortOrders0Direction, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+> \SpringImport\Swagger\Magento2\Client\Model\TaxDataTaxRateSearchResultsInterface taxTaxRateRepositoryV1GetListGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
 
 
 
@@ -114,16 +114,16 @@ Search TaxRates This call returns an array of objects, but detailed information 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\TaxTaxRateRepositoryV1Api();
-$searchCriteriaFilterGroups0Filters0Field = "searchCriteriaFilterGroups0Filters0Field_example"; // string | Field
-$searchCriteriaFilterGroups0Filters0Value = "searchCriteriaFilterGroups0Filters0Value_example"; // string | Value
-$searchCriteriaFilterGroups0Filters0ConditionType = "searchCriteriaFilterGroups0Filters0ConditionType_example"; // string | Condition type
-$searchCriteriaSortOrders0Field = "searchCriteriaSortOrders0Field_example"; // string | Sorting field.
-$searchCriteriaSortOrders0Direction = "searchCriteriaSortOrders0Direction_example"; // string | Sorting direction.
+$searchCriteriaFilterGroupsFiltersField = "searchCriteriaFilterGroupsFiltersField_example"; // string | Field
+$searchCriteriaFilterGroupsFiltersValue = "searchCriteriaFilterGroupsFiltersValue_example"; // string | Value
+$searchCriteriaFilterGroupsFiltersConditionType = "searchCriteriaFilterGroupsFiltersConditionType_example"; // string | Condition type
+$searchCriteriaSortOrdersField = "searchCriteriaSortOrdersField_example"; // string | Sorting field.
+$searchCriteriaSortOrdersDirection = "searchCriteriaSortOrdersDirection_example"; // string | Sorting direction.
 $searchCriteriaPageSize = 56; // int | Page size.
 $searchCriteriaCurrentPage = 56; // int | Current page.
 
 try {
-    $result = $api_instance->taxTaxRateRepositoryV1GetListGet($searchCriteriaFilterGroups0Filters0Field, $searchCriteriaFilterGroups0Filters0Value, $searchCriteriaFilterGroups0Filters0ConditionType, $searchCriteriaSortOrders0Field, $searchCriteriaSortOrders0Direction, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+    $result = $api_instance->taxTaxRateRepositoryV1GetListGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling TaxTaxRateRepositoryV1Api->taxTaxRateRepositoryV1GetListGet: ', $e->getMessage(), PHP_EOL;
@@ -135,11 +135,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **searchCriteriaFilterGroups0Filters0Field** | **string**| Field | [optional]
- **searchCriteriaFilterGroups0Filters0Value** | **string**| Value | [optional]
- **searchCriteriaFilterGroups0Filters0ConditionType** | **string**| Condition type | [optional]
- **searchCriteriaSortOrders0Field** | **string**| Sorting field. | [optional]
- **searchCriteriaSortOrders0Direction** | **string**| Sorting direction. | [optional]
+ **searchCriteriaFilterGroupsFiltersField** | **string**| Field | [optional]
+ **searchCriteriaFilterGroupsFiltersValue** | **string**| Value | [optional]
+ **searchCriteriaFilterGroupsFiltersConditionType** | **string**| Condition type | [optional]
+ **searchCriteriaSortOrdersField** | **string**| Sorting field. | [optional]
+ **searchCriteriaSortOrdersDirection** | **string**| Sorting direction. | [optional]
  **searchCriteriaPageSize** | **int**| Page size. | [optional]
  **searchCriteriaCurrentPage** | **int**| Current page. | [optional]
 
@@ -171,7 +171,7 @@ Create or update tax rate
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\TaxTaxRateRepositoryV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body113(); // \SpringImport\Swagger\Magento2\Client\Model\Body113 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body126(); // \SpringImport\Swagger\Magento2\Client\Model\Body126 | 
 
 try {
     $result = $api_instance->taxTaxRateRepositoryV1SavePost($body);
@@ -186,7 +186,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body113**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body113.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body126**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body126.md)|  | [optional]
 
 ### Return type
 
@@ -216,7 +216,7 @@ Create or update tax rate
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\TaxTaxRateRepositoryV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body112(); // \SpringImport\Swagger\Magento2\Client\Model\Body112 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body125(); // \SpringImport\Swagger\Magento2\Client\Model\Body125 | 
 
 try {
     $result = $api_instance->taxTaxRateRepositoryV1SavePut($body);
@@ -231,7 +231,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body112**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body112.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body125**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body125.md)|  | [optional]
 
 ### Return type
 

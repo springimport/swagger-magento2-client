@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\SalesShipmentTrackRepositoryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -66,7 +66,7 @@ Performs persist operations for a specified shipment track.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\SalesShipmentTrackRepositoryV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body84(); // \SpringImport\Swagger\Magento2\Client\Model\Body84 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body97(); // \SpringImport\Swagger\Magento2\Client\Model\Body97 | 
 
 try {
     $result = $api_instance->salesShipmentTrackRepositoryV1SavePost($body);
@@ -81,7 +81,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body84**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body84.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body97**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body97.md)|  | [optional]
 
 ### Return type
 

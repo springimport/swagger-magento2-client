@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\SalesCreditmemoManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -158,7 +158,7 @@ Prepare creditmemo to refund and save it.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\SalesCreditmemoManagementV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body79(); // \SpringImport\Swagger\Magento2\Client\Model\Body79 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body92(); // \SpringImport\Swagger\Magento2\Client\Model\Body92 | 
 
 try {
     $result = $api_instance->salesCreditmemoManagementV1RefundPost($body);
@@ -173,7 +173,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body79**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body79.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body92**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body92.md)|  | [optional]
 
 ### Return type
 

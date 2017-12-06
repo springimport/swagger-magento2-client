@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\CatalogInventoryStockRegistryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -170,7 +170,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\CatalogInventoryStockRegistryV1Api();
 $productSku = "productSku_example"; // string | 
 $itemId = "itemId_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body41(); // \SpringImport\Swagger\Magento2\Client\Model\Body41 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body53(); // \SpringImport\Swagger\Magento2\Client\Model\Body53 | 
 
 try {
     $result = $api_instance->catalogInventoryStockRegistryV1UpdateStockItemBySkuPut($productSku, $itemId, $body);
@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **productSku** | **string**|  |
  **itemId** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body41**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body41.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body53**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body53.md)|  | [optional]
 
 ### Return type
 

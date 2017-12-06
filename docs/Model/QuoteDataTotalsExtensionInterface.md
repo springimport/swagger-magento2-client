@@ -3,8 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**couponLabel** | **string** |  | [optional] 
 **baseCustomerBalanceAmount** | **float** |  | [optional] 
 **customerBalanceAmount** | **float** |  | [optional] 
+**negotiableQuoteTotals** | [**\SpringImport\Swagger\Magento2\Client\Model\NegotiableQuoteDataNegotiableQuoteTotalsInterface**](NegotiableQuoteDataNegotiableQuoteTotalsInterface.md) |  | [optional] 
 **rewardPointsBalance** | **float** |  | [optional] 
 **rewardCurrencyAmount** | **float** |  | [optional] 
 **baseRewardCurrencyAmount** | **float** |  | [optional] 

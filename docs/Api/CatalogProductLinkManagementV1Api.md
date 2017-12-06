@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\CatalogProductLinkManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -69,7 +69,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\CatalogProductLinkManagementV1Api();
 $sku = "sku_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body36(); // \SpringImport\Swagger\Magento2\Client\Model\Body36 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body48(); // \SpringImport\Swagger\Magento2\Client\Model\Body48 | 
 
 try {
     $result = $api_instance->catalogProductLinkManagementV1SetProductLinksPost($sku, $body);
@@ -85,7 +85,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sku** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body36**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body36.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body48**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body48.md)|  | [optional]
 
 ### Return type
 

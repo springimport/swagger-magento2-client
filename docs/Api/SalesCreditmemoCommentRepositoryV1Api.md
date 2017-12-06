@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\SalesCreditmemoCommentRepositoryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\SalesCreditmemoCommentRepositoryV1Api();
 $id = "id_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body78(); // \SpringImport\Swagger\Magento2\Client\Model\Body78 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body91(); // \SpringImport\Swagger\Magento2\Client\Model\Body91 | 
 
 try {
     $result = $api_instance->salesCreditmemoCommentRepositoryV1SavePost($id, $body);
@@ -37,7 +37,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body78**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body78.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body91**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body91.md)|  | [optional]
 
 ### Return type
 

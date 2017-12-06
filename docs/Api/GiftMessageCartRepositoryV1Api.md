@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\GiftMessageCartRepositoryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -110,7 +110,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\GiftMessageCartRepositoryV1Api();
 $cartId = 56; // int | The cart ID.
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body123(); // \SpringImport\Swagger\Magento2\Client\Model\Body123 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body167(); // \SpringImport\Swagger\Magento2\Client\Model\Body167 | 
 
 try {
     $result = $api_instance->giftMessageCartRepositoryV1SavePost($cartId, $body);
@@ -126,7 +126,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **int**| The cart ID. |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body123**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body123.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body167**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body167.md)|  | [optional]
 
 ### Return type
 
@@ -156,7 +156,7 @@ Set the gift message for an entire order.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\GiftMessageCartRepositoryV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body124(); // \SpringImport\Swagger\Magento2\Client\Model\Body124 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body168(); // \SpringImport\Swagger\Magento2\Client\Model\Body168 | 
 
 try {
     $result = $api_instance->giftMessageCartRepositoryV1SavePost_0($body);
@@ -171,7 +171,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body124**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body124.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body168**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body168.md)|  | [optional]
 
 ### Return type
 

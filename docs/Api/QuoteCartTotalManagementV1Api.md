@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\QuoteCartTotalManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Set shipping/billing methods and additional data for cart and collect totals.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteCartTotalManagementV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body70(); // \SpringImport\Swagger\Magento2\Client\Model\Body70 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body82(); // \SpringImport\Swagger\Magento2\Client\Model\Body82 | 
 
 try {
     $result = $api_instance->quoteCartTotalManagementV1CollectTotalsPut($body);
@@ -35,7 +35,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body70**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body70.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body82**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body82.md)|  | [optional]
 
 ### Return type
 

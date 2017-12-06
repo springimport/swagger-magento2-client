@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\SalesRefundOrderV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\SalesRefundOrderV1Api();
 $orderId = 56; // int | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body81(); // \SpringImport\Swagger\Magento2\Client\Model\Body81 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body94(); // \SpringImport\Swagger\Magento2\Client\Model\Body94 | 
 
 try {
     $result = $api_instance->salesRefundOrderV1ExecutePost($orderId, $body);
@@ -37,7 +37,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **orderId** | **int**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body81**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body81.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body94**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body94.md)|  | [optional]
 
 ### Return type
 

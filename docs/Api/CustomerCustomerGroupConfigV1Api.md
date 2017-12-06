@@ -1,0 +1,54 @@
+# SpringImport\Swagger\Magento2\Client\CustomerCustomerGroupConfigV1Api
+
+All URIs are relative to *http://hb.vg/rest/default*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**customerCustomerGroupConfigV1SetDefaultCustomerGroupPut**](CustomerCustomerGroupConfigV1Api.md#customerCustomerGroupConfigV1SetDefaultCustomerGroupPut) | **PUT** /V1/customerGroups/default/{id} | 
+
+
+# **customerCustomerGroupConfigV1SetDefaultCustomerGroupPut**
+> int customerCustomerGroupConfigV1SetDefaultCustomerGroupPut($id)
+
+
+
+Set system default customer group.
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\CustomerCustomerGroupConfigV1Api();
+$id = 56; // int | 
+
+try {
+    $result = $api_instance->customerCustomerGroupConfigV1SetDefaultCustomerGroupPut($id);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling CustomerCustomerGroupConfigV1Api->customerCustomerGroupConfigV1SetDefaultCustomerGroupPut: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **id** | **int**|  |
+
+### Return type
+
+**int**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+

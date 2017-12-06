@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\CheckoutPaymentInformationManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -63,7 +63,7 @@ Set payment information and place order for a specified cart.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\CheckoutPaymentInformationManagementV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body102(); // \SpringImport\Swagger\Magento2\Client\Model\Body102 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body108(); // \SpringImport\Swagger\Magento2\Client\Model\Body108 | 
 
 try {
     $result = $api_instance->checkoutPaymentInformationManagementV1SavePaymentInformationAndPlaceOrderPost($body);
@@ -78,7 +78,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body102**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body102.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body108**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body108.md)|  | [optional]
 
 ### Return type
 
@@ -108,7 +108,7 @@ Set payment information for a specified cart.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\CheckoutPaymentInformationManagementV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body103(); // \SpringImport\Swagger\Magento2\Client\Model\Body103 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body109(); // \SpringImport\Swagger\Magento2\Client\Model\Body109 | 
 
 try {
     $result = $api_instance->checkoutPaymentInformationManagementV1SavePaymentInformationPost($body);
@@ -123,7 +123,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body103**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body103.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body109**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body109.md)|  | [optional]
 
 ### Return type
 

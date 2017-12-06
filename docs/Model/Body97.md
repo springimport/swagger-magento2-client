@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**addressInformation** | [**\SpringImport\Swagger\Magento2\Client\Model\CheckoutDataTotalsInformationInterface**](CheckoutDataTotalsInformationInterface.md) |  | 
+**entity** | [**\SpringImport\Swagger\Magento2\Client\Model\SalesDataShipmentTrackInterface**](SalesDataShipmentTrackInterface.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

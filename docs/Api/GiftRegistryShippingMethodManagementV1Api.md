@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\GiftRegistryShippingMethodManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -20,7 +20,7 @@ Estimate shipping
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\GiftRegistryShippingMethodManagementV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body121(); // \SpringImport\Swagger\Magento2\Client\Model\Body121 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body165(); // \SpringImport\Swagger\Magento2\Client\Model\Body165 | 
 
 try {
     $result = $api_instance->giftRegistryShippingMethodManagementV1EstimateByRegistryIdPost($body);
@@ -35,7 +35,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body121**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body121.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body165**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body165.md)|  | [optional]
 
 ### Return type
 

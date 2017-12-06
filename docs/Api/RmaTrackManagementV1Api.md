@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\RmaTrackManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,7 +24,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\RmaTrackManagementV1Api();
 $id = 56; // int | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body131(); // \SpringImport\Swagger\Magento2\Client\Model\Body131 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body179(); // \SpringImport\Swagger\Magento2\Client\Model\Body179 | 
 
 try {
     $result = $api_instance->rmaTrackManagementV1AddTrackPost($id, $body);
@@ -40,7 +40,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body131**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body131.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body179**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body179.md)|  | [optional]
 
 ### Return type
 

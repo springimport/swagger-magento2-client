@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\GiftMessageGuestCartRepositoryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -67,7 +67,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\GiftMessageGuestCartRepositoryV1Api();
 $cartId = "cartId_example"; // string | The cart ID.
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body127(); // \SpringImport\Swagger\Magento2\Client\Model\Body127 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body171(); // \SpringImport\Swagger\Magento2\Client\Model\Body171 | 
 
 try {
     $result = $api_instance->giftMessageGuestCartRepositoryV1SavePost($cartId, $body);
@@ -83,7 +83,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**| The cart ID. |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body127**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body127.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body171**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body171.md)|  | [optional]
 
 ### Return type
 

@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\QuoteGuestCartItemRepositoryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -107,7 +107,7 @@ No authorization required
 
 
 
-Add the specified item to the specified cart.
+Add/update the specified cart item.
 
 ### Example
 ```php
@@ -116,7 +116,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCartItemRepositoryV1Api();
 $cartId = "cartId_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body61(); // \SpringImport\Swagger\Magento2\Client\Model\Body61 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body73(); // \SpringImport\Swagger\Magento2\Client\Model\Body73 | 
 
 try {
     $result = $api_instance->quoteGuestCartItemRepositoryV1SavePost($cartId, $body);
@@ -132,7 +132,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body61**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body61.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body73**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body73.md)|  | [optional]
 
 ### Return type
 
@@ -154,7 +154,7 @@ No authorization required
 
 
 
-Add the specified item to the specified cart.
+Add/update the specified cart item.
 
 ### Example
 ```php
@@ -164,7 +164,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteGuestCartItemRepositoryV1Api();
 $cartId = "cartId_example"; // string | 
 $itemId = "itemId_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body62(); // \SpringImport\Swagger\Magento2\Client\Model\Body62 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body74(); // \SpringImport\Swagger\Magento2\Client\Model\Body74 | 
 
 try {
     $result = $api_instance->quoteGuestCartItemRepositoryV1SavePut($cartId, $itemId, $body);
@@ -181,7 +181,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
  **itemId** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body62**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body62.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body74**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body74.md)|  | [optional]
 
 ### Return type
 

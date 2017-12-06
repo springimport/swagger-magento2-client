@@ -3,7 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**taxClass** | [**\SpringImport\Swagger\Magento2\Client\Model\TaxDataTaxClassInterface**](TaxDataTaxClassInterface.md) |  | 
+**codes** | **string[]** |  | 
+**ignoreInvalidCoupons** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

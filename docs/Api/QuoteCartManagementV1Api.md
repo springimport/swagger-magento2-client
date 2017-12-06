@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\QuoteCartManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteCartManagementV1Api();
 $cartId = 56; // int | The cart ID.
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body46(); // \SpringImport\Swagger\Magento2\Client\Model\Body46 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body58(); // \SpringImport\Swagger\Magento2\Client\Model\Body58 | 
 
 try {
     $result = $api_instance->quoteCartManagementV1AssignCustomerPut($cartId, $body);
@@ -43,7 +43,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **int**| The cart ID. |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body46**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body46.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body58**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body58.md)|  | [optional]
 
 ### Return type
 
@@ -65,7 +65,7 @@ No authorization required
 
 
 
-Creates an empty cart and quote for a specified customer.
+Creates an empty cart and quote for a specified customer if customer does not have a cart yet.
 
 ### Example
 ```php
@@ -106,7 +106,7 @@ No authorization required
 
 
 
-Creates an empty cart and quote for a specified customer.
+Creates an empty cart and quote for a specified customer if customer does not have a cart yet.
 
 ### Example
 ```php
@@ -241,7 +241,7 @@ Places an order for a specified cart.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteCartManagementV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body48(); // \SpringImport\Swagger\Magento2\Client\Model\Body48 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body60(); // \SpringImport\Swagger\Magento2\Client\Model\Body60 | 
 
 try {
     $result = $api_instance->quoteCartManagementV1PlaceOrderPut($body);
@@ -256,7 +256,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body48**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body48.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body60**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body60.md)|  | [optional]
 
 ### Return type
 
@@ -287,7 +287,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteCartManagementV1Api();
 $cartId = 56; // int | The cart ID.
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body49(); // \SpringImport\Swagger\Magento2\Client\Model\Body49 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body61(); // \SpringImport\Swagger\Magento2\Client\Model\Body61 | 
 
 try {
     $result = $api_instance->quoteCartManagementV1PlaceOrderPut_0($cartId, $body);
@@ -303,7 +303,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **int**| The cart ID. |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body49**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body49.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body61**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body61.md)|  | [optional]
 
 ### Return type
 

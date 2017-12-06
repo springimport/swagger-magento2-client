@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\CatalogProductCustomOptionRepositoryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -163,7 +163,7 @@ Save Custom Option
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\CatalogProductCustomOptionRepositoryV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body33(); // \SpringImport\Swagger\Magento2\Client\Model\Body33 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body45(); // \SpringImport\Swagger\Magento2\Client\Model\Body45 | 
 
 try {
     $result = $api_instance->catalogProductCustomOptionRepositoryV1SavePost($body);
@@ -178,7 +178,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body33**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body33.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body45**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body45.md)|  | [optional]
 
 ### Return type
 
@@ -209,7 +209,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\CatalogProductCustomOptionRepositoryV1Api();
 $optionId = "optionId_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body34(); // \SpringImport\Swagger\Magento2\Client\Model\Body34 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body46(); // \SpringImport\Swagger\Magento2\Client\Model\Body46 | 
 
 try {
     $result = $api_instance->catalogProductCustomOptionRepositoryV1SavePut($optionId, $body);
@@ -225,7 +225,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **optionId** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body34**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body34.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body46**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body46.md)|  | [optional]
 
 ### Return type
 

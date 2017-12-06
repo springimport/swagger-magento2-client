@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\CatalogProductTierPriceManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

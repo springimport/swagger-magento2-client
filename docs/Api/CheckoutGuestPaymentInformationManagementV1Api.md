@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\CheckoutGuestPaymentInformationManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -68,7 +68,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\CheckoutGuestPaymentInformationManagementV1Api();
 $cartId = "cartId_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body100(); // \SpringImport\Swagger\Magento2\Client\Model\Body100 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body106(); // \SpringImport\Swagger\Magento2\Client\Model\Body106 | 
 
 try {
     $result = $api_instance->checkoutGuestPaymentInformationManagementV1SavePaymentInformationAndPlaceOrderPost($cartId, $body);
@@ -84,7 +84,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body100**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body100.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body106**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body106.md)|  | [optional]
 
 ### Return type
 
@@ -115,7 +115,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\CheckoutGuestPaymentInformationManagementV1Api();
 $cartId = "cartId_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body101(); // \SpringImport\Swagger\Magento2\Client\Model\Body101 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body107(); // \SpringImport\Swagger\Magento2\Client\Model\Body107 | 
 
 try {
     $result = $api_instance->checkoutGuestPaymentInformationManagementV1SavePaymentInformationPost($cartId, $body);
@@ -131,7 +131,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body101**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body101.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body107**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body107.md)|  | [optional]
 
 ### Return type
 

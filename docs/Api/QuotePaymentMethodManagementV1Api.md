@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\QuotePaymentMethodManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -198,7 +198,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuotePaymentMethodManagementV1Api();
 $cartId = 56; // int | The cart ID.
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body63(); // \SpringImport\Swagger\Magento2\Client\Model\Body63 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body75(); // \SpringImport\Swagger\Magento2\Client\Model\Body75 | 
 
 try {
     $result = $api_instance->quotePaymentMethodManagementV1SetPut($cartId, $body);
@@ -214,7 +214,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **int**| The cart ID. |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body63**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body63.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body75**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body75.md)|  | [optional]
 
 ### Return type
 
@@ -244,7 +244,7 @@ Adds a specified payment method to a specified shopping cart.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuotePaymentMethodManagementV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body64(); // \SpringImport\Swagger\Magento2\Client\Model\Body64 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body76(); // \SpringImport\Swagger\Magento2\Client\Model\Body76 | 
 
 try {
     $result = $api_instance->quotePaymentMethodManagementV1SetPut_0($body);
@@ -259,7 +259,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body64**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body64.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body76**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body76.md)|  | [optional]
 
 ### Return type
 

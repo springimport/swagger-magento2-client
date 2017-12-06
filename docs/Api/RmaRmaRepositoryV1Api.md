@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\RmaRmaRepositoryV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\RmaRmaRepositoryV1Api();
 $id = "id_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body133(); // \SpringImport\Swagger\Magento2\Client\Model\Body133 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body181(); // \SpringImport\Swagger\Magento2\Client\Model\Body181 | 
 
 try {
     $result = $api_instance->rmaRmaRepositoryV1DeleteDelete($id, $body);
@@ -38,7 +38,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body133**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body133.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body181**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body181.md)|  | [optional]
 
 ### Return type
 

@@ -3,8 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**customerId** | **int** | The customer ID. | 
-**storeId** | **int** |  | 
+**productLink** | [**\SpringImport\Swagger\Magento2\Client\Model\CatalogDataCategoryProductLinkInterface**](CatalogDataCategoryProductLinkInterface.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

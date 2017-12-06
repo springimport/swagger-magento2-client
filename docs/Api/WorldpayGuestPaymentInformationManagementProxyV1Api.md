@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\WorldpayGuestPaymentInformationManagementProxyV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -21,7 +21,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\WorldpayGuestPaymentInformationManagementProxyV1Api();
 $cartId = "cartId_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body138(); // \SpringImport\Swagger\Magento2\Client\Model\Body138 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body184(); // \SpringImport\Swagger\Magento2\Client\Model\Body184 | 
 
 try {
     $result = $api_instance->worldpayGuestPaymentInformationManagementProxyV1SavePaymentInformationAndPlaceOrderPost($cartId, $body);
@@ -37,7 +37,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body138**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body138.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body184**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body184.md)|  | [optional]
 
 ### Return type
 

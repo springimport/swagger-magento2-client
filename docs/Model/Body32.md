@@ -3,8 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**parentId** | **int** |  | 
-**afterId** | **int** |  | [optional] 
+**prices** | [**\SpringImport\Swagger\Magento2\Client\Model\CatalogDataTierPriceInterface[]**](CatalogDataTierPriceInterface.md) |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

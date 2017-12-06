@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\QuoteShipmentEstimationV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,7 +22,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteShipmentEstimationV1Api();
 $cartId = "cartId_example"; // string | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body54(); // \SpringImport\Swagger\Magento2\Client\Model\Body54 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body66(); // \SpringImport\Swagger\Magento2\Client\Model\Body66 | 
 
 try {
     $result = $api_instance->quoteShipmentEstimationV1EstimateByExtendedAddressPost($cartId, $body);
@@ -38,7 +38,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **cartId** | **string**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body54**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body54.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body66**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body66.md)|  | [optional]
 
 ### Return type
 
@@ -68,7 +68,7 @@ Estimate shipping by address and return list of available shipping methods
 require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\QuoteShipmentEstimationV1Api();
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body55(); // \SpringImport\Swagger\Magento2\Client\Model\Body55 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body67(); // \SpringImport\Swagger\Magento2\Client\Model\Body67 | 
 
 try {
     $result = $api_instance->quoteShipmentEstimationV1EstimateByExtendedAddressPost_0($body);
@@ -83,7 +83,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body55**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body55.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body67**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body67.md)|  | [optional]
 
 ### Return type
 

@@ -1,0 +1,104 @@
+# SpringImport\Swagger\Magento2\Client\NegotiableQuoteGiftCardAccountManagementV1Api
+
+All URIs are relative to *http://hb.vg/rest/default*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**negotiableQuoteGiftCardAccountManagementV1DeleteByQuoteIdDelete**](NegotiableQuoteGiftCardAccountManagementV1Api.md#negotiableQuoteGiftCardAccountManagementV1DeleteByQuoteIdDelete) | **DELETE** /V1/negotiable-carts/{cartId}/giftCards/{giftCardCode} | 
+[**negotiableQuoteGiftCardAccountManagementV1SaveByQuoteIdPost**](NegotiableQuoteGiftCardAccountManagementV1Api.md#negotiableQuoteGiftCardAccountManagementV1SaveByQuoteIdPost) | **POST** /V1/negotiable-carts/{cartId}/giftCards | 
+
+
+# **negotiableQuoteGiftCardAccountManagementV1DeleteByQuoteIdDelete**
+> bool negotiableQuoteGiftCardAccountManagementV1DeleteByQuoteIdDelete($cartId, $giftCardCode)
+
+
+
+Remove GiftCard Account entity
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\NegotiableQuoteGiftCardAccountManagementV1Api();
+$cartId = 56; // int | 
+$giftCardCode = "giftCardCode_example"; // string | 
+
+try {
+    $result = $api_instance->negotiableQuoteGiftCardAccountManagementV1DeleteByQuoteIdDelete($cartId, $giftCardCode);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling NegotiableQuoteGiftCardAccountManagementV1Api->negotiableQuoteGiftCardAccountManagementV1DeleteByQuoteIdDelete: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **cartId** | **int**|  |
+ **giftCardCode** | **string**|  |
+
+### Return type
+
+**bool**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **negotiableQuoteGiftCardAccountManagementV1SaveByQuoteIdPost**
+> bool negotiableQuoteGiftCardAccountManagementV1SaveByQuoteIdPost($cartId, $body)
+
+
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new SpringImport\Swagger\Magento2\Client\Api\NegotiableQuoteGiftCardAccountManagementV1Api();
+$cartId = 56; // int | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body164(); // \SpringImport\Swagger\Magento2\Client\Model\Body164 | 
+
+try {
+    $result = $api_instance->negotiableQuoteGiftCardAccountManagementV1SaveByQuoteIdPost($cartId, $body);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling NegotiableQuoteGiftCardAccountManagementV1Api->negotiableQuoteGiftCardAccountManagementV1SaveByQuoteIdPost: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **cartId** | **int**|  |
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body164**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body164.md)|  | [optional]
+
+### Return type
+
+**bool**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+

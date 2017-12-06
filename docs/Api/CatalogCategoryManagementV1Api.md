@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\CatalogCategoryManagementV1Api
 
-All URIs are relative to *http://t213.vg/rest/default*
+All URIs are relative to *http://hb.vg/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -69,7 +69,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 $api_instance = new SpringImport\Swagger\Magento2\Client\Api\CatalogCategoryManagementV1Api();
 $categoryId = 56; // int | 
-$body = new \SpringImport\Swagger\Magento2\Client\Model\Body32(); // \SpringImport\Swagger\Magento2\Client\Model\Body32 | 
+$body = new \SpringImport\Swagger\Magento2\Client\Model\Body44(); // \SpringImport\Swagger\Magento2\Client\Model\Body44 | 
 
 try {
     $result = $api_instance->catalogCategoryManagementV1MovePut($categoryId, $body);
@@ -85,7 +85,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **categoryId** | **int**|  |
- **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body32**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body32.md)|  | [optional]
+ **body** | [**\SpringImport\Swagger\Magento2\Client\Model\Body44**](../Model/\SpringImport\Swagger\Magento2\Client\Model\Body44.md)|  | [optional]
 
 ### Return type
 

@@ -1154,23 +1154,23 @@ class CompanyTeamRepositoryV1Api
 
         // query params
         if ($searchCriteriaFilterGroupsFiltersField !== null) {
-            $queryParams['searchCriteria[filterGroups][][filters][][field]'] = ObjectSerializer::toQueryValue($searchCriteriaFilterGroupsFiltersField);
+            $queryParams['searchCriteria[filterGroups][0][filters][0][field]'] = ObjectSerializer::toQueryValue($searchCriteriaFilterGroupsFiltersField);
         }
         // query params
         if ($searchCriteriaFilterGroupsFiltersValue !== null) {
-            $queryParams['searchCriteria[filterGroups][][filters][][value]'] = ObjectSerializer::toQueryValue($searchCriteriaFilterGroupsFiltersValue);
+            $queryParams['searchCriteria[filterGroups][0][filters][0][value]'] = ObjectSerializer::toQueryValue($searchCriteriaFilterGroupsFiltersValue);
         }
         // query params
         if ($searchCriteriaFilterGroupsFiltersConditionType !== null) {
-            $queryParams['searchCriteria[filterGroups][][filters][][conditionType]'] = ObjectSerializer::toQueryValue($searchCriteriaFilterGroupsFiltersConditionType);
+            $queryParams['searchCriteria[filterGroups][0][filters][0][conditionType]'] = ObjectSerializer::toQueryValue($searchCriteriaFilterGroupsFiltersConditionType);
         }
         // query params
         if ($searchCriteriaSortOrdersField !== null) {
-            $queryParams['searchCriteria[sortOrders][][field]'] = ObjectSerializer::toQueryValue($searchCriteriaSortOrdersField);
+            $queryParams['searchCriteria[sortOrders][0][field]'] = ObjectSerializer::toQueryValue($searchCriteriaSortOrdersField);
         }
         // query params
         if ($searchCriteriaSortOrdersDirection !== null) {
-            $queryParams['searchCriteria[sortOrders][][direction]'] = ObjectSerializer::toQueryValue($searchCriteriaSortOrdersDirection);
+            $queryParams['searchCriteria[sortOrders][0][direction]'] = ObjectSerializer::toQueryValue($searchCriteriaSortOrdersDirection);
         }
         // query params
         if ($searchCriteriaPageSize !== null) {

@@ -74,7 +74,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *http://b2b222.vg/index.php/rest/default*
+All URIs are relative to *http://example.com/index.php/rest/default*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------

@@ -81,7 +81,7 @@ class Configuration
      *
      * @var string
      */
-    protected $host = 'http://b2b222.vg/index.php/rest/default';
+    protected $host = 'http://example.com/index.php/rest/default';
 
     /**
      * User agent of the HTTP request, set to "PHP-Swagger" by default

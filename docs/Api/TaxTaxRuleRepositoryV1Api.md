@@ -1,6 +1,6 @@
 # SpringImport\Swagger\Magento2\Client\TaxTaxRuleRepositoryV1Api
 
-All URIs are relative to *http://b2b222.vg/index.php/rest/default*
+All URIs are relative to *http://example.com/index.php/rest/default*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

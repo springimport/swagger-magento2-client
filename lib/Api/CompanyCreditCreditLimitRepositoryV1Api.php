@@ -364,7 +364,8 @@ class CompanyCreditCreditLimitRepositoryV1Api
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        //$query = \GuzzleHttp\Psr7\build_query($queryParams);
+        $query = \http_build_query($queryParams);
         return new Request(
             'GET',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
@@ -637,7 +638,8 @@ class CompanyCreditCreditLimitRepositoryV1Api
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        //$query = \GuzzleHttp\Psr7\build_query($queryParams);
+        $query = \http_build_query($queryParams);
         return new Request(
             'GET',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),
@@ -935,7 +937,8 @@ class CompanyCreditCreditLimitRepositoryV1Api
             $headers
         );
 
-        $query = \GuzzleHttp\Psr7\build_query($queryParams);
+        //$query = \GuzzleHttp\Psr7\build_query($queryParams);
+        $query = \http_build_query($queryParams);
         return new Request(
             'PUT',
             $this->config->getHost() . $resourcePath . ($query ? "?{$query}" : ''),

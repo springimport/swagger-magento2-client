@@ -93,7 +93,7 @@ class CompanyCreditCreditHistoryManagementV1Api
      */
     public function companyCreditCreditHistoryManagementV1GetListGet($searchCriteria)
     {
-        list($response) = $this->companyCreditCreditHistoryManagementV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->companyCreditCreditHistoryManagementV1GetListGetWithHttpInfo($searchCriteria);
         return $response;
     }
 
@@ -109,7 +109,7 @@ class CompanyCreditCreditHistoryManagementV1Api
     public function companyCreditCreditHistoryManagementV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\CompanyCreditDataHistorySearchResultsInterface';
-        $request = $this->companyCreditCreditHistoryManagementV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->companyCreditCreditHistoryManagementV1GetListGetRequest($searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -206,7 +206,7 @@ class CompanyCreditCreditHistoryManagementV1Api
      */
     public function companyCreditCreditHistoryManagementV1GetListGetAsync($searchCriteria)
     {
-        return $this->companyCreditCreditHistoryManagementV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->companyCreditCreditHistoryManagementV1GetListGetAsyncWithHttpInfo($searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -227,7 +227,7 @@ class CompanyCreditCreditHistoryManagementV1Api
     public function companyCreditCreditHistoryManagementV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\CompanyCreditDataHistorySearchResultsInterface';
-        $request = $this->companyCreditCreditHistoryManagementV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->companyCreditCreditHistoryManagementV1GetListGetRequest($searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

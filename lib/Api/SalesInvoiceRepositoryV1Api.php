@@ -367,7 +367,7 @@ class SalesInvoiceRepositoryV1Api
      */
     public function salesInvoiceRepositoryV1GetListGet($searchCriteria)
     {
-        list($response) = $this->salesInvoiceRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->salesInvoiceRepositoryV1GetListGetWithHttpInfo($searchCriteria);
         return $response;
     }
 
@@ -383,7 +383,7 @@ class SalesInvoiceRepositoryV1Api
     public function salesInvoiceRepositoryV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\SalesDataInvoiceSearchResultInterface';
-        $request = $this->salesInvoiceRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->salesInvoiceRepositoryV1GetListGetRequest($searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -472,7 +472,7 @@ class SalesInvoiceRepositoryV1Api
      */
     public function salesInvoiceRepositoryV1GetListGetAsync($searchCriteria)
     {
-        return $this->salesInvoiceRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->salesInvoiceRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -493,7 +493,7 @@ class SalesInvoiceRepositoryV1Api
     public function salesInvoiceRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\SalesDataInvoiceSearchResultInterface';
-        $request = $this->salesInvoiceRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->salesInvoiceRepositoryV1GetListGetRequest($searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

@@ -657,7 +657,7 @@ class CatalogAttributeSetRepositoryV1Api
      */
     public function catalogAttributeSetRepositoryV1GetListGet($searchCriteria)
     {
-        list($response) = $this->catalogAttributeSetRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->catalogAttributeSetRepositoryV1GetListGetWithHttpInfo($searchCriteria);
         return $response;
     }
 
@@ -673,7 +673,7 @@ class CatalogAttributeSetRepositoryV1Api
     public function catalogAttributeSetRepositoryV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\EavDataAttributeSetSearchResultsInterface';
-        $request = $this->catalogAttributeSetRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->catalogAttributeSetRepositoryV1GetListGetRequest($searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -762,7 +762,7 @@ class CatalogAttributeSetRepositoryV1Api
      */
     public function catalogAttributeSetRepositoryV1GetListGetAsync($searchCriteria)
     {
-        return $this->catalogAttributeSetRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->catalogAttributeSetRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -783,7 +783,7 @@ class CatalogAttributeSetRepositoryV1Api
     public function catalogAttributeSetRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\EavDataAttributeSetSearchResultsInterface';
-        $request = $this->catalogAttributeSetRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->catalogAttributeSetRepositoryV1GetListGetRequest($searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

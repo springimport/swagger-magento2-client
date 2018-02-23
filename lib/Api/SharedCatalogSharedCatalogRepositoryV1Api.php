@@ -665,7 +665,7 @@ class SharedCatalogSharedCatalogRepositoryV1Api
      */
     public function sharedCatalogSharedCatalogRepositoryV1GetListGet($searchCriteria)
     {
-        list($response) = $this->sharedCatalogSharedCatalogRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->sharedCatalogSharedCatalogRepositoryV1GetListGetWithHttpInfo($searchCriteria);
         return $response;
     }
 
@@ -681,7 +681,7 @@ class SharedCatalogSharedCatalogRepositoryV1Api
     public function sharedCatalogSharedCatalogRepositoryV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\SharedCatalogDataSearchResultsInterface';
-        $request = $this->sharedCatalogSharedCatalogRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->sharedCatalogSharedCatalogRepositoryV1GetListGetRequest($searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -778,7 +778,7 @@ class SharedCatalogSharedCatalogRepositoryV1Api
      */
     public function sharedCatalogSharedCatalogRepositoryV1GetListGetAsync($searchCriteria)
     {
-        return $this->sharedCatalogSharedCatalogRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->sharedCatalogSharedCatalogRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -799,7 +799,7 @@ class SharedCatalogSharedCatalogRepositoryV1Api
     public function sharedCatalogSharedCatalogRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\SharedCatalogDataSearchResultsInterface';
-        $request = $this->sharedCatalogSharedCatalogRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->sharedCatalogSharedCatalogRepositoryV1GetListGetRequest($searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

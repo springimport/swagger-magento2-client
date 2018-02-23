@@ -657,7 +657,7 @@ class EavAttributeSetRepositoryV1Api
      */
     public function eavAttributeSetRepositoryV1GetListGet($searchCriteria)
     {
-        list($response) = $this->eavAttributeSetRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->eavAttributeSetRepositoryV1GetListGetWithHttpInfo($searchCriteria);
         return $response;
     }
 
@@ -673,7 +673,7 @@ class EavAttributeSetRepositoryV1Api
     public function eavAttributeSetRepositoryV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\EavDataAttributeSetSearchResultsInterface';
-        $request = $this->eavAttributeSetRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->eavAttributeSetRepositoryV1GetListGetRequest($searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -762,7 +762,7 @@ class EavAttributeSetRepositoryV1Api
      */
     public function eavAttributeSetRepositoryV1GetListGetAsync($searchCriteria)
     {
-        return $this->eavAttributeSetRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->eavAttributeSetRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -783,7 +783,7 @@ class EavAttributeSetRepositoryV1Api
     public function eavAttributeSetRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\EavDataAttributeSetSearchResultsInterface';
-        $request = $this->eavAttributeSetRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->eavAttributeSetRepositoryV1GetListGetRequest($searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

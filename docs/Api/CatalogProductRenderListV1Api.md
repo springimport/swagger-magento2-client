@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **catalogProductRenderListV1GetListGet**
-> \SpringImport\Swagger\Magento2\Client\Model\CatalogDataProductRenderSearchResultsInterface catalogProductRenderListV1GetListGet($storeId, $currencyCode, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+> \SpringImport\Swagger\Magento2\Client\Model\CatalogDataProductRenderSearchResultsInterface catalogProductRenderListV1GetListGet($storeId, $currencyCode, $searchCriteria)
 
 
 
@@ -35,7 +35,7 @@ $searchCriteriaPageSize = 56; // int | Page size.
 $searchCriteriaCurrentPage = 56; // int | Current page.
 
 try {
-    $result = $apiInstance->catalogProductRenderListV1GetListGet($storeId, $currencyCode, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+    $result = $apiInstance->catalogProductRenderListV1GetListGet($storeId, $currencyCode, $searchCriteria);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CatalogProductRenderListV1Api->catalogProductRenderListV1GetListGet: ', $e->getMessage(), PHP_EOL;

@@ -384,7 +384,7 @@ class CompanyCreditCreditLimitRepositoryV1Api
      */
     public function companyCreditCreditLimitRepositoryV1GetListGet($searchCriteria)
     {
-        list($response) = $this->companyCreditCreditLimitRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->companyCreditCreditLimitRepositoryV1GetListGetWithHttpInfo($searchCriteria);
         return $response;
     }
 
@@ -400,7 +400,7 @@ class CompanyCreditCreditLimitRepositoryV1Api
     public function companyCreditCreditLimitRepositoryV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\CompanyCreditDataCreditLimitSearchResultsInterface';
-        $request = $this->companyCreditCreditLimitRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->companyCreditCreditLimitRepositoryV1GetListGetRequest($searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -497,7 +497,7 @@ class CompanyCreditCreditLimitRepositoryV1Api
      */
     public function companyCreditCreditLimitRepositoryV1GetListGetAsync($searchCriteria)
     {
-        return $this->companyCreditCreditLimitRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->companyCreditCreditLimitRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -518,7 +518,7 @@ class CompanyCreditCreditLimitRepositoryV1Api
     public function companyCreditCreditLimitRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\CompanyCreditDataCreditLimitSearchResultsInterface';
-        $request = $this->companyCreditCreditLimitRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->companyCreditCreditLimitRepositoryV1GetListGetRequest($searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

@@ -367,7 +367,7 @@ class CatalogCategoryAttributeRepositoryV1Api
      */
     public function catalogCategoryAttributeRepositoryV1GetListGet($searchCriteria)
     {
-        list($response) = $this->catalogCategoryAttributeRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->catalogCategoryAttributeRepositoryV1GetListGetWithHttpInfo($searchCriteria);
         return $response;
     }
 
@@ -383,7 +383,7 @@ class CatalogCategoryAttributeRepositoryV1Api
     public function catalogCategoryAttributeRepositoryV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\CatalogDataCategoryAttributeSearchResultsInterface';
-        $request = $this->catalogCategoryAttributeRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->catalogCategoryAttributeRepositoryV1GetListGetRequest($searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -472,7 +472,7 @@ class CatalogCategoryAttributeRepositoryV1Api
      */
     public function catalogCategoryAttributeRepositoryV1GetListGetAsync($searchCriteria)
     {
-        return $this->catalogCategoryAttributeRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->catalogCategoryAttributeRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -493,7 +493,7 @@ class CatalogCategoryAttributeRepositoryV1Api
     public function catalogCategoryAttributeRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\CatalogDataCategoryAttributeSearchResultsInterface';
-        $request = $this->catalogCategoryAttributeRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->catalogCategoryAttributeRepositoryV1GetListGetRequest($searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

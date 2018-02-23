@@ -638,7 +638,7 @@ class RmaRmaManagementV1Api
      */
     public function rmaRmaManagementV1SearchGet($searchCriteria)
     {
-        list($response) = $this->rmaRmaManagementV1SearchGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->rmaRmaManagementV1SearchGetWithHttpInfo($searchCriteria);
         return $response;
     }
 
@@ -654,7 +654,7 @@ class RmaRmaManagementV1Api
     public function rmaRmaManagementV1SearchGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\RmaDataRmaSearchResultInterface';
-        $request = $this->rmaRmaManagementV1SearchGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->rmaRmaManagementV1SearchGetRequest($searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -743,7 +743,7 @@ class RmaRmaManagementV1Api
      */
     public function rmaRmaManagementV1SearchGetAsync($searchCriteria)
     {
-        return $this->rmaRmaManagementV1SearchGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->rmaRmaManagementV1SearchGetAsyncWithHttpInfo($searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -764,7 +764,7 @@ class RmaRmaManagementV1Api
     public function rmaRmaManagementV1SearchGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\RmaDataRmaSearchResultInterface';
-        $request = $this->rmaRmaManagementV1SearchGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->rmaRmaManagementV1SearchGetRequest($searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

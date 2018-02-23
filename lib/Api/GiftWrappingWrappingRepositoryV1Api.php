@@ -658,7 +658,7 @@ class GiftWrappingWrappingRepositoryV1Api
      */
     public function giftWrappingWrappingRepositoryV1GetListGet($searchCriteria)
     {
-        list($response) = $this->giftWrappingWrappingRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->giftWrappingWrappingRepositoryV1GetListGetWithHttpInfo($searchCriteria);
         return $response;
     }
 
@@ -674,7 +674,7 @@ class GiftWrappingWrappingRepositoryV1Api
     public function giftWrappingWrappingRepositoryV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\GiftWrappingDataWrappingSearchResultsInterface';
-        $request = $this->giftWrappingWrappingRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->giftWrappingWrappingRepositoryV1GetListGetRequest($searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -763,7 +763,7 @@ class GiftWrappingWrappingRepositoryV1Api
      */
     public function giftWrappingWrappingRepositoryV1GetListGetAsync($searchCriteria)
     {
-        return $this->giftWrappingWrappingRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->giftWrappingWrappingRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -784,7 +784,7 @@ class GiftWrappingWrappingRepositoryV1Api
     public function giftWrappingWrappingRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\GiftWrappingDataWrappingSearchResultsInterface';
-        $request = $this->giftWrappingWrappingRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->giftWrappingWrappingRepositoryV1GetListGetRequest($searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

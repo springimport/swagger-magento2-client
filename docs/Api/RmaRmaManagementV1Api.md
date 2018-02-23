@@ -110,7 +110,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **rmaRmaManagementV1SearchGet**
-> \SpringImport\Swagger\Magento2\Client\Model\RmaDataRmaSearchResultInterface rmaRmaManagementV1SearchGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+> \SpringImport\Swagger\Magento2\Client\Model\RmaDataRmaSearchResultInterface rmaRmaManagementV1SearchGet($searchCriteria)
 
 
 
@@ -135,7 +135,7 @@ $searchCriteriaPageSize = 56; // int | Page size.
 $searchCriteriaCurrentPage = 56; // int | Current page.
 
 try {
-    $result = $apiInstance->rmaRmaManagementV1SearchGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+    $result = $apiInstance->rmaRmaManagementV1SearchGet($searchCriteria);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling RmaRmaManagementV1Api->rmaRmaManagementV1SearchGet: ', $e->getMessage(), PHP_EOL;

@@ -673,7 +673,7 @@ class SalesRuleRuleRepositoryV1Api
      */
     public function salesRuleRuleRepositoryV1GetListGet($searchCriteria)
     {
-        list($response) = $this->salesRuleRuleRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->salesRuleRuleRepositoryV1GetListGetWithHttpInfo($searchCriteria);
         return $response;
     }
 
@@ -689,7 +689,7 @@ class SalesRuleRuleRepositoryV1Api
     public function salesRuleRuleRepositoryV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\SalesRuleDataRuleSearchResultInterface';
-        $request = $this->salesRuleRuleRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->salesRuleRuleRepositoryV1GetListGetRequest($searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -786,7 +786,7 @@ class SalesRuleRuleRepositoryV1Api
      */
     public function salesRuleRuleRepositoryV1GetListGetAsync($searchCriteria)
     {
-        return $this->salesRuleRuleRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->salesRuleRuleRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -807,7 +807,7 @@ class SalesRuleRuleRepositoryV1Api
     public function salesRuleRuleRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\SalesRuleDataRuleSearchResultInterface';
-        $request = $this->salesRuleRuleRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->salesRuleRuleRepositoryV1GetListGetRequest($searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

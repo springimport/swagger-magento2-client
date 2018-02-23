@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **searchV1SearchGet**
-> \SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchSearchResultInterface searchV1SearchGet($searchCriteriaRequestName, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+> \SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchSearchResultInterface searchV1SearchGet($searchCriteriaRequestName, $searchCriteria)
 
 
 
@@ -34,7 +34,7 @@ $searchCriteriaPageSize = 56; // int | Page size.
 $searchCriteriaCurrentPage = 56; // int | Current page.
 
 try {
-    $result = $apiInstance->searchV1SearchGet($searchCriteriaRequestName, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+    $result = $apiInstance->searchV1SearchGet($searchCriteriaRequestName, $searchCriteria);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SearchV1Api->searchV1SearchGet: ', $e->getMessage(), PHP_EOL;

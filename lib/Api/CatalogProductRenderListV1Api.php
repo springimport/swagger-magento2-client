@@ -95,7 +95,7 @@ class CatalogProductRenderListV1Api
      */
     public function catalogProductRenderListV1GetListGet($storeId, $currencyCode, $searchCriteria)
     {
-        list($response) = $this->catalogProductRenderListV1GetListGetWithHttpInfo($storeId, $currencyCode, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->catalogProductRenderListV1GetListGetWithHttpInfo($storeId, $currencyCode, $searchCriteria);
         return $response;
     }
 
@@ -113,7 +113,7 @@ class CatalogProductRenderListV1Api
     public function catalogProductRenderListV1GetListGetWithHttpInfo($storeId, $currencyCode, $searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\CatalogDataProductRenderSearchResultsInterface';
-        $request = $this->catalogProductRenderListV1GetListGetRequest($storeId, $currencyCode, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->catalogProductRenderListV1GetListGetRequest($storeId, $currencyCode, $searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -196,7 +196,7 @@ class CatalogProductRenderListV1Api
      */
     public function catalogProductRenderListV1GetListGetAsync($storeId, $currencyCode, $searchCriteria)
     {
-        return $this->catalogProductRenderListV1GetListGetAsyncWithHttpInfo($storeId, $currencyCode, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->catalogProductRenderListV1GetListGetAsyncWithHttpInfo($storeId, $currencyCode, $searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -219,7 +219,7 @@ class CatalogProductRenderListV1Api
     public function catalogProductRenderListV1GetListGetAsyncWithHttpInfo($storeId, $currencyCode, $searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\CatalogDataProductRenderSearchResultsInterface';
-        $request = $this->catalogProductRenderListV1GetListGetRequest($storeId, $currencyCode, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->catalogProductRenderListV1GetListGetRequest($storeId, $currencyCode, $searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

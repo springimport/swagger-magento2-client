@@ -665,7 +665,7 @@ class TaxTaxRateRepositoryV1Api
      */
     public function taxTaxRateRepositoryV1GetListGet($searchCriteria)
     {
-        list($response) = $this->taxTaxRateRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->taxTaxRateRepositoryV1GetListGetWithHttpInfo($searchCriteria);
         return $response;
     }
 
@@ -681,7 +681,7 @@ class TaxTaxRateRepositoryV1Api
     public function taxTaxRateRepositoryV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\TaxDataTaxRateSearchResultsInterface';
-        $request = $this->taxTaxRateRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->taxTaxRateRepositoryV1GetListGetRequest($searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -778,7 +778,7 @@ class TaxTaxRateRepositoryV1Api
      */
     public function taxTaxRateRepositoryV1GetListGetAsync($searchCriteria)
     {
-        return $this->taxTaxRateRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->taxTaxRateRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -799,7 +799,7 @@ class TaxTaxRateRepositoryV1Api
     public function taxTaxRateRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\TaxDataTaxRateSearchResultsInterface';
-        $request = $this->taxTaxRateRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->taxTaxRateRepositoryV1GetListGetRequest($searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

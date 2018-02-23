@@ -94,7 +94,7 @@ class SearchV1Api
      */
     public function searchV1SearchGet($searchCriteriaRequestName = null, $searchCriteria)
     {
-        list($response) = $this->searchV1SearchGetWithHttpInfo($searchCriteriaRequestName, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->searchV1SearchGetWithHttpInfo($searchCriteriaRequestName, $searchCriteria);
         return $response;
     }
 
@@ -111,7 +111,7 @@ class SearchV1Api
     public function searchV1SearchGetWithHttpInfo($searchCriteriaRequestName = null, $searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchSearchResultInterface';
-        $request = $this->searchV1SearchGetRequest($searchCriteriaRequestName, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->searchV1SearchGetRequest($searchCriteriaRequestName, $searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -193,7 +193,7 @@ class SearchV1Api
      */
     public function searchV1SearchGetAsync($searchCriteriaRequestName = null, $searchCriteria)
     {
-        return $this->searchV1SearchGetAsyncWithHttpInfo($searchCriteriaRequestName, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->searchV1SearchGetAsyncWithHttpInfo($searchCriteriaRequestName, $searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -215,7 +215,7 @@ class SearchV1Api
     public function searchV1SearchGetAsyncWithHttpInfo($searchCriteriaRequestName = null, $searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchSearchResultInterface';
-        $request = $this->searchV1SearchGetRequest($searchCriteriaRequestName, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->searchV1SearchGetRequest($searchCriteriaRequestName, $searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

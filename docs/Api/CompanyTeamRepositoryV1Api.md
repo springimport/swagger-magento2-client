@@ -161,7 +161,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **companyTeamRepositoryV1GetListGet**
-> \SpringImport\Swagger\Magento2\Client\Model\CompanyDataTeamSearchResultsInterface companyTeamRepositoryV1GetListGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+> \SpringImport\Swagger\Magento2\Client\Model\CompanyDataTeamSearchResultsInterface companyTeamRepositoryV1GetListGet($searchCriteria)
 
 
 
@@ -186,7 +186,7 @@ $searchCriteriaPageSize = 56; // int | Page size.
 $searchCriteriaCurrentPage = 56; // int | Current page.
 
 try {
-    $result = $apiInstance->companyTeamRepositoryV1GetListGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+    $result = $apiInstance->companyTeamRepositoryV1GetListGet($searchCriteria);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CompanyTeamRepositoryV1Api->companyTeamRepositoryV1GetListGet: ', $e->getMessage(), PHP_EOL;

@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **companyCreditCreditHistoryManagementV1GetListGet**
-> \SpringImport\Swagger\Magento2\Client\Model\CompanyCreditDataHistorySearchResultsInterface companyCreditCreditHistoryManagementV1GetListGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+> \SpringImport\Swagger\Magento2\Client\Model\CompanyCreditDataHistorySearchResultsInterface companyCreditCreditHistoryManagementV1GetListGet($searchCriteria)
 
 
 
@@ -34,7 +34,7 @@ $searchCriteriaPageSize = 56; // int | Page size.
 $searchCriteriaCurrentPage = 56; // int | Current page.
 
 try {
-    $result = $apiInstance->companyCreditCreditHistoryManagementV1GetListGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+    $result = $apiInstance->companyCreditCreditHistoryManagementV1GetListGet($searchCriteria);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CompanyCreditCreditHistoryManagementV1Api->companyCreditCreditHistoryManagementV1GetListGet: ', $e->getMessage(), PHP_EOL;

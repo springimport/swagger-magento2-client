@@ -59,7 +59,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **salesCreditmemoRepositoryV1GetListGet**
-> \SpringImport\Swagger\Magento2\Client\Model\SalesDataCreditmemoSearchResultInterface salesCreditmemoRepositoryV1GetListGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+> \SpringImport\Swagger\Magento2\Client\Model\SalesDataCreditmemoSearchResultInterface salesCreditmemoRepositoryV1GetListGet($searchCriteria)
 
 
 
@@ -84,7 +84,7 @@ $searchCriteriaPageSize = 56; // int | Page size.
 $searchCriteriaCurrentPage = 56; // int | Current page.
 
 try {
-    $result = $apiInstance->salesCreditmemoRepositoryV1GetListGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+    $result = $apiInstance->salesCreditmemoRepositoryV1GetListGet($searchCriteria);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SalesCreditmemoRepositoryV1Api->salesCreditmemoRepositoryV1GetListGet: ', $e->getMessage(), PHP_EOL;

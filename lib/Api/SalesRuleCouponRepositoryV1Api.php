@@ -673,7 +673,7 @@ class SalesRuleCouponRepositoryV1Api
      */
     public function salesRuleCouponRepositoryV1GetListGet($searchCriteria)
     {
-        list($response) = $this->salesRuleCouponRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        list($response) = $this->salesRuleCouponRepositoryV1GetListGetWithHttpInfo($searchCriteria);
         return $response;
     }
 
@@ -689,7 +689,7 @@ class SalesRuleCouponRepositoryV1Api
     public function salesRuleCouponRepositoryV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\SalesRuleDataCouponSearchResultInterface';
-        $request = $this->salesRuleCouponRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->salesRuleCouponRepositoryV1GetListGetRequest($searchCriteria);
 
         try {
             $options = $this->createHttpClientOption();
@@ -786,7 +786,7 @@ class SalesRuleCouponRepositoryV1Api
      */
     public function salesRuleCouponRepositoryV1GetListGetAsync($searchCriteria)
     {
-        return $this->salesRuleCouponRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+        return $this->salesRuleCouponRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -807,7 +807,7 @@ class SalesRuleCouponRepositoryV1Api
     public function salesRuleCouponRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\SalesRuleDataCouponSearchResultInterface';
-        $request = $this->salesRuleCouponRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+        $request = $this->salesRuleCouponRepositoryV1GetListGetRequest($searchCriteria);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())

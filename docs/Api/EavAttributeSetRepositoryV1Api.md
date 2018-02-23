@@ -109,7 +109,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **eavAttributeSetRepositoryV1GetListGet**
-> \SpringImport\Swagger\Magento2\Client\Model\EavDataAttributeSetSearchResultsInterface eavAttributeSetRepositoryV1GetListGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
+> \SpringImport\Swagger\Magento2\Client\Model\EavDataAttributeSetSearchResultsInterface eavAttributeSetRepositoryV1GetListGet($searchCriteria)
 
 
 
@@ -134,7 +134,7 @@ $searchCriteriaPageSize = 56; // int | Page size.
 $searchCriteriaCurrentPage = 56; // int | Current page.
 
 try {
-    $result = $apiInstance->eavAttributeSetRepositoryV1GetListGet($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
+    $result = $apiInstance->eavAttributeSetRepositoryV1GetListGet($searchCriteria);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling EavAttributeSetRepositoryV1Api->eavAttributeSetRepositoryV1GetListGet: ', $e->getMessage(), PHP_EOL;

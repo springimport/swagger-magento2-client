@@ -85,13 +85,7 @@ class CompanyCreditCreditHistoryManagementV1Api
     /**
      * Operation companyCreditCreditHistoryManagementV1GetListGet
      *
-     * @param  string $searchCriteriaFilterGroupsFiltersField Field (optional)
-     * @param  string $searchCriteriaFilterGroupsFiltersValue Value (optional)
-     * @param  string $searchCriteriaFilterGroupsFiltersConditionType Condition type (optional)
-     * @param  string $searchCriteriaSortOrdersField Sorting field. (optional)
-     * @param  string $searchCriteriaSortOrdersDirection Sorting direction. (optional)
-     * @param  int $searchCriteriaPageSize Page size. (optional)
-     * @param  int $searchCriteriaCurrentPage Current page. (optional)
+     * @param \SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchCriteriaInterface $searchCriteria Search criteria. (required)
      *
      * @throws \SpringImport\Swagger\Magento2\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -106,13 +100,7 @@ class CompanyCreditCreditHistoryManagementV1Api
     /**
      * Operation companyCreditCreditHistoryManagementV1GetListGetWithHttpInfo
      *
-     * @param  string $searchCriteriaFilterGroupsFiltersField Field (optional)
-     * @param  string $searchCriteriaFilterGroupsFiltersValue Value (optional)
-     * @param  string $searchCriteriaFilterGroupsFiltersConditionType Condition type (optional)
-     * @param  string $searchCriteriaSortOrdersField Sorting field. (optional)
-     * @param  string $searchCriteriaSortOrdersDirection Sorting direction. (optional)
-     * @param  int $searchCriteriaPageSize Page size. (optional)
-     * @param  int $searchCriteriaCurrentPage Current page. (optional)
+     * @param \SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchCriteriaInterface $searchCriteria Search criteria. (required)
      *
      * @throws \SpringImport\Swagger\Magento2\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -211,13 +199,7 @@ class CompanyCreditCreditHistoryManagementV1Api
      *
      * 
      *
-     * @param  string $searchCriteriaFilterGroupsFiltersField Field (optional)
-     * @param  string $searchCriteriaFilterGroupsFiltersValue Value (optional)
-     * @param  string $searchCriteriaFilterGroupsFiltersConditionType Condition type (optional)
-     * @param  string $searchCriteriaSortOrdersField Sorting field. (optional)
-     * @param  string $searchCriteriaSortOrdersDirection Sorting direction. (optional)
-     * @param  int $searchCriteriaPageSize Page size. (optional)
-     * @param  int $searchCriteriaCurrentPage Current page. (optional)
+     * @param \SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchCriteriaInterface $searchCriteria Search criteria. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -237,13 +219,7 @@ class CompanyCreditCreditHistoryManagementV1Api
      *
      * 
      *
-     * @param  string $searchCriteriaFilterGroupsFiltersField Field (optional)
-     * @param  string $searchCriteriaFilterGroupsFiltersValue Value (optional)
-     * @param  string $searchCriteriaFilterGroupsFiltersConditionType Condition type (optional)
-     * @param  string $searchCriteriaSortOrdersField Sorting field. (optional)
-     * @param  string $searchCriteriaSortOrdersDirection Sorting direction. (optional)
-     * @param  int $searchCriteriaPageSize Page size. (optional)
-     * @param  int $searchCriteriaCurrentPage Current page. (optional)
+     * @param \SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchCriteriaInterface $searchCriteria Search criteria. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -293,13 +269,7 @@ class CompanyCreditCreditHistoryManagementV1Api
     /**
      * Create request for operation 'companyCreditCreditHistoryManagementV1GetListGet'
      *
-     * @param  string $searchCriteriaFilterGroupsFiltersField Field (optional)
-     * @param  string $searchCriteriaFilterGroupsFiltersValue Value (optional)
-     * @param  string $searchCriteriaFilterGroupsFiltersConditionType Condition type (optional)
-     * @param  string $searchCriteriaSortOrdersField Sorting field. (optional)
-     * @param  string $searchCriteriaSortOrdersDirection Sorting direction. (optional)
-     * @param  int $searchCriteriaPageSize Page size. (optional)
-     * @param  int $searchCriteriaCurrentPage Current page. (optional)
+     * @param \SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchCriteriaInterface $searchCriteria Search criteria. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

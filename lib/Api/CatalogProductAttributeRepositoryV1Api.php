@@ -655,7 +655,7 @@ class CatalogProductAttributeRepositoryV1Api
      * @throws \InvalidArgumentException
      * @return \SpringImport\Swagger\Magento2\Client\Model\CatalogDataProductAttributeSearchResultsInterface
      */
-    public function catalogProductAttributeRepositoryV1GetListGet($searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function catalogProductAttributeRepositoryV1GetListGet($searchCriteria)
     {
         list($response) = $this->catalogProductAttributeRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
         return $response;
@@ -670,7 +670,7 @@ class CatalogProductAttributeRepositoryV1Api
      * @throws \InvalidArgumentException
      * @return array of \SpringImport\Swagger\Magento2\Client\Model\CatalogDataProductAttributeSearchResultsInterface, HTTP status code, HTTP response headers (array of strings)
      */
-    public function catalogProductAttributeRepositoryV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function catalogProductAttributeRepositoryV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\CatalogDataProductAttributeSearchResultsInterface';
         $request = $this->catalogProductAttributeRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
@@ -760,7 +760,7 @@ class CatalogProductAttributeRepositoryV1Api
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function catalogProductAttributeRepositoryV1GetListGetAsync($searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function catalogProductAttributeRepositoryV1GetListGetAsync($searchCriteria)
     {
         return $this->catalogProductAttributeRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
             ->then(
@@ -780,7 +780,7 @@ class CatalogProductAttributeRepositoryV1Api
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function catalogProductAttributeRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function catalogProductAttributeRepositoryV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\CatalogDataProductAttributeSearchResultsInterface';
         $request = $this->catalogProductAttributeRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
@@ -830,7 +830,7 @@ class CatalogProductAttributeRepositoryV1Api
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function catalogProductAttributeRepositoryV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    protected function catalogProductAttributeRepositoryV1GetListGetRequest($searchCriteria)
     {
 
         $resourcePath = '/V1/products/attributes';

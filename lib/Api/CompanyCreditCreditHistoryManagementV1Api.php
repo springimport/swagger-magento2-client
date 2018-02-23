@@ -91,7 +91,7 @@ class CompanyCreditCreditHistoryManagementV1Api
      * @throws \InvalidArgumentException
      * @return \SpringImport\Swagger\Magento2\Client\Model\CompanyCreditDataHistorySearchResultsInterface
      */
-    public function companyCreditCreditHistoryManagementV1GetListGet($searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function companyCreditCreditHistoryManagementV1GetListGet($searchCriteria)
     {
         list($response) = $this->companyCreditCreditHistoryManagementV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
         return $response;
@@ -106,7 +106,7 @@ class CompanyCreditCreditHistoryManagementV1Api
      * @throws \InvalidArgumentException
      * @return array of \SpringImport\Swagger\Magento2\Client\Model\CompanyCreditDataHistorySearchResultsInterface, HTTP status code, HTTP response headers (array of strings)
      */
-    public function companyCreditCreditHistoryManagementV1GetListGetWithHttpInfo($searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function companyCreditCreditHistoryManagementV1GetListGetWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\CompanyCreditDataHistorySearchResultsInterface';
         $request = $this->companyCreditCreditHistoryManagementV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
@@ -204,7 +204,7 @@ class CompanyCreditCreditHistoryManagementV1Api
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function companyCreditCreditHistoryManagementV1GetListGetAsync($searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function companyCreditCreditHistoryManagementV1GetListGetAsync($searchCriteria)
     {
         return $this->companyCreditCreditHistoryManagementV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
             ->then(
@@ -224,7 +224,7 @@ class CompanyCreditCreditHistoryManagementV1Api
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function companyCreditCreditHistoryManagementV1GetListGetAsyncWithHttpInfo($searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function companyCreditCreditHistoryManagementV1GetListGetAsyncWithHttpInfo($searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\CompanyCreditDataHistorySearchResultsInterface';
         $request = $this->companyCreditCreditHistoryManagementV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
@@ -274,7 +274,7 @@ class CompanyCreditCreditHistoryManagementV1Api
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function companyCreditCreditHistoryManagementV1GetListGetRequest($searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    protected function companyCreditCreditHistoryManagementV1GetListGetRequest($searchCriteria)
     {
 
         $resourcePath = '/V1/companyCredits/history';

@@ -92,7 +92,7 @@ class SearchV1Api
      * @throws \InvalidArgumentException
      * @return \SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchSearchResultInterface
      */
-    public function searchV1SearchGet($searchCriteriaRequestName = null, $searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function searchV1SearchGet($searchCriteriaRequestName = null, $searchCriteria)
     {
         list($response) = $this->searchV1SearchGetWithHttpInfo($searchCriteriaRequestName, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
         return $response;
@@ -108,7 +108,7 @@ class SearchV1Api
      * @throws \InvalidArgumentException
      * @return array of \SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchSearchResultInterface, HTTP status code, HTTP response headers (array of strings)
      */
-    public function searchV1SearchGetWithHttpInfo($searchCriteriaRequestName = null, $searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function searchV1SearchGetWithHttpInfo($searchCriteriaRequestName = null, $searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchSearchResultInterface';
         $request = $this->searchV1SearchGetRequest($searchCriteriaRequestName, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
@@ -191,7 +191,7 @@ class SearchV1Api
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function searchV1SearchGetAsync($searchCriteriaRequestName = null, $searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function searchV1SearchGetAsync($searchCriteriaRequestName = null, $searchCriteria)
     {
         return $this->searchV1SearchGetAsyncWithHttpInfo($searchCriteriaRequestName, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage)
             ->then(
@@ -212,7 +212,7 @@ class SearchV1Api
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function searchV1SearchGetAsyncWithHttpInfo($searchCriteriaRequestName = null, $searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    public function searchV1SearchGetAsyncWithHttpInfo($searchCriteriaRequestName = null, $searchCriteria)
     {
         $returnType = '\SpringImport\Swagger\Magento2\Client\Model\FrameworkSearchSearchResultInterface';
         $request = $this->searchV1SearchGetRequest($searchCriteriaRequestName, $searchCriteriaFilterGroupsFiltersField, $searchCriteriaFilterGroupsFiltersValue, $searchCriteriaFilterGroupsFiltersConditionType, $searchCriteriaSortOrdersField, $searchCriteriaSortOrdersDirection, $searchCriteriaPageSize, $searchCriteriaCurrentPage);
@@ -263,7 +263,7 @@ class SearchV1Api
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function searchV1SearchGetRequest($searchCriteriaRequestName = null, $searchCriteriaFilterGroupsFiltersField = null, $searchCriteriaFilterGroupsFiltersValue = null, $searchCriteriaFilterGroupsFiltersConditionType = null, $searchCriteriaSortOrdersField = null, $searchCriteriaSortOrdersDirection = null, $searchCriteriaPageSize = null, $searchCriteriaCurrentPage = null)
+    protected function searchV1SearchGetRequest($searchCriteriaRequestName = null, $searchCriteria)
     {
 
         $resourcePath = '/V1/search';
